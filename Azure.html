@@ -1,0 +1,727 @@
+<!DOCTYPE html>
+<html lang="zxx">
+
+<head>
+  <meta charset="utf-8">
+  <title>Cryptch</title>
+
+  <!-- mobile responsive meta -->
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+  <!-- ** Plugins Needed for the Project ** -->
+  <!-- Bootstrap -->
+  <link rel="stylesheet" href="plugins/bootstrap/bootstrap.min.css">
+  <!-- slick slider -->
+  <link rel="stylesheet" href="plugins/slick/slick.css">
+  <!-- themefy-icon -->
+  <link rel="stylesheet" href="plugins/themify-icons/themify-icons.css">
+  <!-- animation css -->
+  <link rel="stylesheet" href="plugins/animate/animate.css">
+  <!-- aos -->
+  <link rel="stylesheet" href="plugins/aos/aos.css">
+  <!-- venobox popup -->
+  <link rel="stylesheet" href="plugins/venobox/venobox.css">
+
+  <!-- Main Stylesheet -->
+  <link href="css/style.css" rel="stylesheet">
+
+  <!--Favicon-->
+  <link rel="shortcut icon" href="images/favicon.png" type="image/x-icon">
+  <link rel="icon" href="images/fav.png" type="image/x-icon">
+
+</head>
+
+<body>
+  <!-- preloader start -->
+  <div class="preloader">
+    <img src="images/preloader.gif" alt="preloader">
+  </div>
+  <!-- preloader end -->
+
+<!-- header -->
+<header class="fixed-top header">
+  <!-- top header -->
+  <div class="top-header py-2 bg-white">
+    <div class="container">
+      <div class="row no-gutters">
+        <div class="col-lg-4 text-center text-lg-left">
+          <a class="text-color mr-3" href="callto:+443003030266"><strong>CALL</strong> +44 300 303 0266</a>
+          <ul class="list-inline d-inline">
+            <li class="list-inline-item mx-0"><a class="d-inline-block p-2 text-color" href="#"><i class="ti-facebook"></i></a></li>
+            <li class="list-inline-item mx-0"><a class="d-inline-block p-2 text-color" href="#"><i class="ti-twitter-alt"></i></a></li>
+            <li class="list-inline-item mx-0"><a class="d-inline-block p-2 text-color" href="#"><i class="ti-linkedin"></i></a></li>
+            <li class="list-inline-item mx-0"><a class="d-inline-block p-2 text-color" href="#"><i class="ti-instagram"></i></a></li>
+          </ul>
+        </div>
+        
+      </div>
+    </div>
+  </div>
+  <!-- navbar -->
+  <div class="navigation w-100">
+    <div class="container">
+      <nav class="navbar navbar-expand-lg navbar-dark p-0">
+        <a class="navbar-brand" href="index.html"><img src="images/logo.png" alt="logo"></a>
+        <button class="navbar-toggler rounded-0" type="button" data-toggle="collapse" data-target="#navigation"
+          aria-controls="navigation" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navigation">
+          <ul class="navbar-nav ml-auto text-center">
+            <li class="nav-item active">
+              <a class="nav-link" href="index.html">Home</a>
+            </li>
+            <li class="nav-item dropdown view">
+              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown"
+                aria-haspopup="true" aria-expanded="false">
+                COURSES
+              </a>
+              <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <a class="dropdown-item" href="teacher.html">Computer Networking</a>
+                <a class="dropdown-item" href="teacher-single.html">Windows Operating System</a>
+                <a class="dropdown-item" href="notice.html">Computer Hardware</a>
+                <a class="dropdown-item" href="AWS.html">AWS Cloud</a>
+                <a class="dropdown-item" href="research.html">CCNA & CCNP</a>
+                <a class="dropdown-item" href="scholarship.html">Ethical Hacking</a>
+                <a class="dropdown-item" href="course-single.html">Redhat Certified Solutions Associate</a>
+                <a class="dropdown-item" href="Azure.html">Microsoft Azure Administrator</a>
+                <a class="dropdown-item" href="MCSA.html">Microsoft Certified Solution Associate</a>
+                <a class="dropdown-item" href="blog-single.html">Automation with Python & Powershell</a>
+              </div>
+              
+            </li>
+            <li class="nav-item @@events">
+              <a class="nav-link" href="events.html">About us & Services</a>
+            </li>
+           <!--  <li class="nav-item @@blog">
+              <a class="nav-link" href="blog.html">BLOG</a>
+            </li> -->
+            <li class="nav-item @@contact">
+              <a class="nav-link" href="contact.html">CONTACT</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+    </div>
+  </div>
+</header><!-- /header -->
+<!-- Modal -->
+<div class="modal fade" id="signupModal" tabindex="-1" role="dialog" aria-hidden="true">
+    <div class="modal-dialog modal-lg" role="document">
+        <div class="modal-content rounded-0 border-0 p-4">
+            <div class="modal-header border-0">
+                <h3>Register</h3>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                <div class="login">
+                    <form action="#" class="row">
+                        <div class="col-12">
+                            <input type="text" class="form-control mb-3" id="signupPhone" name="signupPhone" placeholder="Phone">
+                        </div>
+                        <div class="col-12">
+                            <input type="text" class="form-control mb-3" id="signupName" name="signupName" placeholder="Name">
+                        </div>
+                        <div class="col-12">
+                            <input type="email" class="form-control mb-3" id="signupEmail" name="signupEmail" placeholder="Email">
+                        </div>
+                        <div class="col-12">
+                            <input type="password" class="form-control mb-3" id="signupPassword" name="signupPassword" placeholder="Password">
+                        </div>
+                        <div class="col-12">
+                            <button type="submit" class="btn btn-primary">SIGN UP</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- Modal -->
+<div class="modal fade" id="loginModal" tabindex="-1" role="dialog" aria-hidden="true">
+    <div class="modal-dialog modal-lg" role="document">
+        <div class="modal-content rounded-0 border-0 p-4">
+            <div class="modal-header border-0">
+                <h3>Login</h3>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                <form action="#" class="row">
+                    <div class="col-12">
+                        <input type="text" class="form-control mb-3" id="loginPhone" name="loginPhone" placeholder="Phone">
+                    </div>
+                    <div class="col-12">
+                        <input type="text" class="form-control mb-3" id="loginName" name="loginName" placeholder="Name">
+                    </div>
+                    <div class="col-12">
+                        <input type="password" class="form-control mb-3" id="loginPassword" name="loginPassword" placeholder="Password">
+                    </div>
+                    <div class="col-12">
+                        <button type="submit" class="btn btn-primary">LOGIN</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- page title -->
+<section class="page-title-section overlay" data-background="images/backgrounds/page-title.jpg">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-8">
+        <ul class="list-inline custom-breadcrumb">
+          <li class="list-inline-item"><a class="h2 text-primary font-secondary" href="courses.html">Our Courses</a></li>
+          <li class="list-inline-item text-white h3 font-secondary nasted">Microsoft Azure</li>
+        </ul>
+        <p class="text-white">The Azure cloud platform is more than 200 products and cloud services designed to help you bring new solutions to life—to solve today’s challenges and create the future. Build, run and manage applications across multiple clouds, on-premises and at the edge, with the tools and frameworks of your choice.</p>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- /page title -->
+
+<!-- section -->
+<section class="section-sm">
+  <div class="container">
+    <div class="content-block">
+            <!-- About Us -->
+      <div class="section-area section-sp1">
+                <div class="container">
+           <div class="row d-flex flex-row-reverse">
+            <div class="col-lg-3 col-md-4 col-sm-12 m-b30">
+              <div class="course-detail-bx">
+                <div class="course-price">
+                  <del>Rs 12,000</del>
+                  <h4 class="price">Rs 4,500</h4>
+                </div>  
+                <div class="course-buy-now text-center">
+                  <a href="contact.html" class="btn btn-primary" data-animation-out="fadeOutRight" data-delay-out="5" data-duration-in=".3" data-animation-in="fadeInLeft" data-delay-in=".7">Apply now</a>
+                </div>
+                <div class="teacher-bx">
+                  <div class="teacher-info">
+                    <!-- <div class="teacher-thumb">
+                      <img src="images/courses/1.png" alt=""/>
+                    </div> -->
+                    <div class="teacher-name">
+                      <h5>Best Seller</h5>
+                      <span>Microsoft Azure</span>
+                    </div>
+                  </div>
+                </div>
+                <div class="cours-more-info">
+                  <!-- <div class="review">
+                    <span>3 Review</span>
+                    <ul class="cours-star">
+                      <li class="active"><i class="fa fa-star"></i></li>
+                      <li class="active"><i class="fa fa-star"></i></li>
+                      <li class="active"><i class="fa fa-star"></i></li>
+                      <li><i class="fa fa-star"></i></li>
+                      <li><i class="fa fa-star"></i></li>
+                    </ul>
+                  </div> -->
+                  <div class="price categories">
+                    <span>Categories</span>
+                    <h5 class="text-primary">Cloud Computing</h5>
+                  </div>
+                </div>
+                <div class="course-info-list scroll-page">
+                  <ul class="navbar">
+                    <li><a class="nav-link" href="#overview"><i class="ti-zip"></i>Overview</a></li>
+                    <li><a class="nav-link" href="#curriculum"><i class="ti-bookmark-alt"></i>Curriculum</a></li>
+                    <!-- <li><a class="nav-link" href="#instructor"><i class="ti-user"></i>Instructor</a></li>
+                     --><li><a class="nav-link" href="#reviews"><i class="ti-comments"></i>Related Courses</a></li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          
+            <div class="col-lg-9 col-md-8 col-sm-12">
+              <div class="courses-post">
+                <!-- <div class="ttr-post-media media-effect"> -->
+                  <img class="img-fluid w-100" src="images/courses/7.jpg" alt="banner-feature">
+                <!-- </div> -->
+                <div class="ttr-post-info">
+                  <div class="ttr-post-title ">
+                    <h2 class="post-title" id="overview">Become a Microsoft Azure Administrator</h2>
+                  </div>
+                  <div class="ttr-post-text">
+                    <p>Microsoft Azure, commonly referred to as Azure, is a cloud computing service created by Microsoft. Azure uses large-scale virtualization at Microsoft data centers worldwide and it offers more than 600 services. An Azure Administrator is responsible for implementing, monitoring and maintaining Microsoft Azure solutions, including major services related to Compute, Storage, Network and Security.</p>
+                  </div>
+                </div>
+              </div>
+              <div class="courese-overview" >
+                <h4>Overview</h4>
+                <div class="row">
+                  <div class="col-md-12 col-lg-4">
+                    <ul class="course-features">
+                      <li><i class="ti-book"></i> <span class="label">Lectures</span> <span class="value">30(Days)/4+ Weekends</span></li>
+                      <li><i class="ti-tablet"></i> <span class="label">Mode</span> <span class="value">Offline/Online</span></li>
+                      <li><i class="ti-time"></i> <span class="label">Duration</span> <span class="value">2 hours a day(Daily) or<br>4 hours a day(Weekends only)</span></li>
+                      <li><i class="ti-stats-up"></i> <span class="label">Skill level</span> <span class="value">Intermediate</span></li>
+                      <li><i class="ti-check-box"></i> <span class="label">Certification</span> <span class="value">Yes</span></li>
+                      <li>NOTE* Training fee does not include Global Exam fees</li>
+                      <!-- <li><i class="ti-smallcap"></i> <span class="label">Language</span> <span class="value">English</span></li>
+                      <li><i class="ti-user"></i> <span class="label">Students</span> <span class="value">32</span></li>
+                      <li><i class="ti-check-box"></i> <span class="label">Assessments</span> <span class="value">Yes</span></li> -->
+                    </ul>
+                  </div>
+                  <div class="col-md-12 col-lg-8">
+                    <h5 class="m-b5">Course Description</h5>
+                    <p>Microsoft Azure Administration class is meant to prepare you about dealing with your Azure membership, designing virtual systems administration, backing up and sharing information through the virtual system, actualizing capacity arrangement, dealing with the traffic that gets through the system, making virtual machines, executing Azure Active Directory, making sure about characters and observing your answer. Microsoft Azure is a cloud-based stage for testing, conveying, fabricating and overseeing applications and administrations through Microsoft dealt with the server farm. Sky blue’s cloud appropriation structure gives the clients a lot of apparatuses, direction, and accounts that help them to shape the innovation and business in a manner they have to quicken the business result. Microsoft Azure Administrator’s course content is developed in a manner so it can take you through the subtleties of the effect of Microsoft Azure on the cloud administrations. Microsoft Azure acquaints your cloud condition with apparatuses like danger insight, propelled danger investigation, Azure data insurance and multifaceted approval. It causes you to assume responsibility for your client information by gathering, utilizing and appropriating them all alone. With the assistance of data centres spread everywhere throughout the world, Azure gives high accessibility along repetition. What’s more, on the head of everything, Microsoft Azure is practical too. For every one of these reasons, associations are offering inclination to Microsoft Azure more than some other cloud merchants nowadays. Thus, Microsoft guaranteed Azure Administrators are vigorously requested over the ventures. Our Microsoft Azure course is intended to shape you as one of them.</p>
+                    <!-- <h5 class="m-b5">Certification</h5> -->
+                    <h5 class="m-b5" id="curriculum">Learning Outcomes</h5>
+                    <ul class="list-checked primary">
+                      <li>Students will able to learn about Azure concepts; core Azure services; core solutions and management tools; general security and network security; governance, privacy, and compliance features; Azure cost management and service level agreements.
+                      </li>
+                      <!-- <li>LIVE PROJECT End to End Software Testing Training Included.</li>
+                      <li>Learn Software Testing and Automation basics from a professional trainer from your own desk.</li>
+                      <li>Information packed practical training starting from basics to advanced testing techniques.</li>
+                      <li>Best suitable for beginners to advanced level users and who learn faster when demonstrated.</li>
+                      <li>Course content designed by considering current software testing technology and the job market.</li>
+                      <li>Practical assignments at the end of every session.</li>
+                      <li>Practical learning experience with live project work and examples.cv</li> -->
+                    </ul>
+                  </div>
+                </div>
+              </div>
+              <div class="m-b30" >
+                <h4>Curriculum</h4>
+                <ul class="curriculum-list">
+                    <li>
+                      <!-- <h5>First Level</h5> -->
+                      <ul>
+                        <li>
+                          <div class="curriculum-list-box">
+                            <span>Lesson 1.</span> Network Essentials
+                          </div>
+                          <!-- <span>120 minutes</span> -->
+                        </li>
+                        <li>
+                          <div class="curriculum-list-box">
+                            <span>Lesson 2.</span> Active Directory - Domain Services
+                          </div>
+                         <!--  <span>60 minutes</span> -->
+                        </li>
+                        <li>
+                          <div class="curriculum-list-box">
+                            <span>Lesson 3.</span> Member Servers, Clients, User Configuration
+                          </div>
+                          <!-- <span>85 minutes</span> -->
+                        </li>
+                      
+                        <li>
+                          <div class="curriculum-list-box">
+                            <span>Lesson 4.</span> Permissions / Access Control Lists
+                          </div>
+                        </li>
+                        <li>
+                          <div class="curriculum-list-box">
+                            <span>Lesson 5.</span> Profiles and File Server Resource Manager [FSRM]
+                          </div>
+                        </li>
+                        <li>
+                          <div class="curriculum-list-box">
+                            <span>Lesson 6.</span> Logical Structure of AD - DS
+                          </div>
+                        </li>
+                        <li>
+                          <div class="curriculum-list-box">
+                            <span>Lesson 7.</span> FSMO Roles of AD - DS
+                          </div>
+                        </li>
+                        <li>
+                          <div class="curriculum-list-box">
+                            <span>Lesson 8.</span> Group Policy / System Policies
+                          </div>
+                        </li>
+                        <li>
+                          <div class="curriculum-list-box">
+                            <span>Lesson 9.</span> Active Directory Trusts
+                          </div>
+                        </li>
+                        <li>
+                          <div class="curriculum-list-box">
+                            <span>Lesson 10.</span> Physical Structure of AD-DS
+                          </div>
+                        </li>
+                        <li>
+                          <div class="curriculum-list-box">
+                            <span>Lesson 11.</span> Dynamic Host Configuration Protocol (DHCP)
+                          </div>
+                        </li>
+                        <li>
+                          <div class="curriculum-list-box">
+                            <span>Lesson 12.</span> Domain Name System (DNS)
+                          </div>
+                        </li>
+                        <li>
+                          <div class="curriculum-list-box">
+                            <span>Lesson 13.</span> Internet Information Services (IIS)
+                          </div>
+                        </li>
+                        <li>
+                          <div class="curriculum-list-box">
+                            <span>Lesson 14.</span> Windows Deployment Services
+                          </div>
+                        </li>
+                        <li>
+                          <div class="curriculum-list-box">
+                            <span>Lesson 15.</span> Microsoft Hyper-V
+                          </div>
+                        </li>
+                        <li>
+                          <div class="curriculum-list-box">
+                            <span>Lesson 16.</span> Remote Access Service
+                          </div>
+                        </li>
+                        <li>
+                          <div class="curriculum-list-box">
+                            <span>Lesson 17.</span> Remote Desktop Services
+                          </div>
+                        </li>
+                        <li>
+                          <div class="curriculum-list-box">
+                            <span>Lesson 18.</span> Storage Technologies
+                          </div>
+                        </li>
+                        <li>
+                          <div class="curriculum-list-box">
+                            <span>Lesson 19.</span> Failover Clustering
+                          </div>
+                        </li>
+                        <li>
+                          <div class="curriculum-list-box">
+                            <span>Lesson 20.</span> Advanced Topics
+                          </div>
+                        </li>
+                      </ul>
+                    </li>
+                  </ul>
+              </div>
+              <!-- <div class="" id="instructor">
+                <h4>Instructor</h4>
+                <div class="instructor-bx">
+                  <div class="instructor-author">
+                    <img src="assets/images/testimonials/pic1.jpg" alt="">
+                  </div>
+                  <div class="instructor-info">
+                    <h6>Keny White </h6>
+                    <span>Professor</span>
+                    <ul class="list-inline m-tb10">
+                      <li><a href="#" class="btn sharp-sm facebook"><i class="fa fa-facebook"></i></a></li>
+                      <li><a href="#" class="btn sharp-sm twitter"><i class="fa fa-twitter"></i></a></li>
+                      <li><a href="#" class="btn sharp-sm linkedin"><i class="fa fa-linkedin"></i></a></li>
+                      <li><a href="#" class="btn sharp-sm google-plus"><i class="fa fa-google-plus"></i></a></li>
+                    </ul>
+                    <p class="m-b0">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries</p>
+                  </div>
+                </div>
+                <div class="instructor-bx">
+                  <div class="instructor-author">
+                    <img src="assets/images/testimonials/pic2.jpg" alt="">
+                  </div>
+                  <div class="instructor-info">
+                    <h6>Keny White </h6>
+                    <span>Professor</span>
+                    <ul class="list-inline m-tb10">
+                      <li><a href="#" class="btn sharp-sm facebook"><i class="fa fa-facebook"></i></a></li>
+                      <li><a href="#" class="btn sharp-sm twitter"><i class="fa fa-twitter"></i></a></li>
+                      <li><a href="#" class="btn sharp-sm linkedin"><i class="fa fa-linkedin"></i></a></li>
+                      <li><a href="#" class="btn sharp-sm google-plus"><i class="fa fa-google-plus"></i></a></li>
+                    </ul>
+                    <p class="m-b0">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries</p>
+                  </div>
+                </div>
+              </div> -->
+              <!-- <div class="" id="reviews">
+                <h4>Reviews</h4>
+                
+                <div class="review-bx">
+                  <div class="all-review">
+                    <h2 class="rating-type">3</h2>
+                    <ul class="cours-star">
+                      <li class="active"><i class="fa fa-star"></i></li>
+                      <li class="active"><i class="fa fa-star"></i></li>
+                      <li class="active"><i class="fa fa-star"></i></li>
+                      <li><i class="fa fa-star"></i></li>
+                      <li><i class="fa fa-star"></i></li>
+                    </ul>
+                    <span>3 Rating</span>
+                  </div>
+                  <div class="review-bar">
+                    <div class="bar-bx">
+                      <div class="side">
+                        <div>5 star</div>
+                      </div>
+                      <div class="middle">
+                        <div class="bar-container">
+                          <div class="bar-5" style="width:90%;"></div>
+                        </div>
+                      </div>
+                      <div class="side right">
+                        <div>150</div>
+                      </div>
+                    </div>
+                    <div class="bar-bx">
+                      <div class="side">
+                        <div>4 star</div>
+                      </div>
+                      <div class="middle">
+                        <div class="bar-container">
+                          <div class="bar-5" style="width:70%;"></div>
+                        </div>
+                      </div>
+                      <div class="side right">
+                        <div>140</div>
+                      </div>
+                    </div>
+                    <div class="bar-bx">
+                      <div class="side">
+                        <div>3 star</div>
+                      </div>
+                      <div class="middle">
+                        <div class="bar-container">
+                          <div class="bar-5" style="width:50%;"></div>
+                        </div>
+                      </div>
+                      <div class="side right">
+                        <div>120</div>
+                      </div>
+                    </div>
+                    <div class="bar-bx">
+                      <div class="side">
+                        <div>2 star</div>
+                      </div>
+                      <div class="middle">
+                        <div class="bar-container">
+                          <div class="bar-5" style="width:40%;"></div>
+                        </div>
+                      </div>
+                      <div class="side right">
+                        <div>110</div>
+                      </div>
+                    </div>
+                    <div class="bar-bx">
+                      <div class="side">
+                        <div>1 star</div>
+                      </div>
+                      <div class="middle">
+                        <div class="bar-container">
+                          <div class="bar-5" style="width:20%;"></div>
+                        </div>
+                      </div>
+                      <div class="side right">
+                        <div>80</div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+               -->
+            </div>
+            
+          </div>
+        </div>
+            </div>
+        </div>
+  </div>
+</section>
+<!-- /section -->
+
+<!-- related course -->
+<section class="section pt-0" id="reviews">
+  <div class="container">
+    <div class="row">
+      <div class="col-12">
+        <h2 class="section-title">Related Course</h2>
+      </div>
+    </div>
+    <div class="row justify-content-center">
+      <!-- course item -->
+      <div class="col-lg-4 col-sm-6 mb-5">
+        <div class="card p-0 border-primary rounded-0 hover-shadow">
+          <img class="card-img-top rounded-0" src="images/courses/course-1.jpg" alt="course thumb">
+          <div class="card-body">
+            <ul class="list-inline mb-2">
+              <li class="list-inline-item"><i class="ti-calendar mr-1 text-color"></i>02-14-2018</li>
+              <li class="list-inline-item"><a class="text-color" href="#">Humanities</a></li>
+            </ul>
+            <a href="course-single.html">
+              <h4 class="card-title">Photography</h4>
+            </a>
+            <p class="card-text mb-4"> Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor
+              incididunt ut labore et dolore magna.</p>
+            <a href="course-single.html" class="btn btn-primary btn-sm">Apply now</a>
+          </div>
+        </div>
+      </div>
+      <!-- course item -->
+      <div class="col-lg-4 col-sm-6 mb-5">
+        <div class="card p-0 border-primary rounded-0 hover-shadow">
+          <img class="card-img-top rounded-0" src="images/courses/course-2.jpg" alt="course thumb">
+          <div class="card-body">
+            <ul class="list-inline mb-2">
+              <li class="list-inline-item"><i class="ti-calendar mr-1 text-color"></i>02-14-2018</li>
+              <li class="list-inline-item"><a class="text-color" href="#">Humanities</a></li>
+            </ul>
+            <a href="course-single.html">
+              <h4 class="card-title">Programming</h4>
+            </a>
+            <p class="card-text mb-4"> Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor
+              incididunt ut labore et dolore magna.</p>
+            <a href="course-single.html" class="btn btn-primary btn-sm">Apply now</a>
+          </div>
+        </div>
+      </div>
+      <!-- course item -->
+      <div class="col-lg-4 col-sm-6 mb-5">
+        <div class="card p-0 border-primary rounded-0 hover-shadow">
+          <img class="card-img-top rounded-0" src="images/courses/course-3.jpg" alt="course thumb">
+          <div class="card-body">
+            <ul class="list-inline mb-2">
+              <li class="list-inline-item"><i class="ti-calendar mr-1 text-color"></i>02-14-2018</li>
+              <li class="list-inline-item"><a class="text-color" href="#">Humanities</a></li>
+            </ul>
+            <a href="course-single.html">
+              <h4 class="card-title">Lifestyle Archives</h4>
+            </a>
+            <p class="card-text mb-4"> Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor
+              incididunt ut labore et dolore magna.</p>
+            <a href="course-single.html" class="btn btn-primary btn-sm">Apply now</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- /related course -->
+
+<!-- footer -->
+<footer>
+  <!-- newsletter -->
+  <div class="newsletter">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-9 ml-auto bg-primary py-5 newsletter-block">
+          <h3 class="text-white">Subscribe Now</h3>
+          <form action="#">
+            <div class="input-wrapper">
+              <input type="email" class="form-control border-0" id="newsletter" name="newsletter" placeholder="Enter Your Email...">
+              <button type="submit" value="send" class="btn btn-primary">Join</button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- footer content -->
+  <div class="footer bg-footer section border-bottom">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-4 col-sm-8 mb-5 mb-lg-0">
+          <!-- logo -->
+          <a class="logo-footer" href="index.html"><img class="img-fluid mb-4" src="images/logo.png" alt="logo"></a>
+          <ul class="list-unstyled">
+            <li class="mb-2">23621 15 Mile Rd #C104, Clinton MI, 48035, New York, USA</li>
+            <li class="mb-2">+1 (2) 345 6789</li>
+            <li class="mb-2">+1 (2) 345 6789</li>
+            <li class="mb-2">contact@yourdomain.com</li>
+          </ul>
+        </div>
+        <!-- company -->
+        <div class="col-lg-2 col-md-3 col-sm-4 col-6 mb-5 mb-md-0">
+          <h4 class="text-white mb-5">COMPANY</h4>
+          <ul class="list-unstyled">
+            <li class="mb-3"><a class="text-color" href="about.html">About Us</a></li>
+            <li class="mb-3"><a class="text-color" href="teacher.html">Our Teacher</a></li>
+            <li class="mb-3"><a class="text-color" href="contact.html">Contact</a></li>
+            <li class="mb-3"><a class="text-color" href="blog.html">Blog</a></li>
+          </ul>
+        </div>
+        <!-- links -->
+        <div class="col-lg-2 col-md-3 col-sm-4 col-6 mb-5 mb-md-0">
+          <h4 class="text-white mb-5">LINKS</h4>
+          <ul class="list-unstyled">
+            <li class="mb-3"><a class="text-color" href="courses.html">Courses</a></li>
+            <li class="mb-3"><a class="text-color" href="event.html">Events</a></li>
+            <li class="mb-3"><a class="text-color" href="gallary.html">Gallary</a></li>
+            <li class="mb-3"><a class="text-color" href="faqs.html">FAQs</a></li>
+          </ul>
+        </div>
+        <!-- support -->
+        <div class="col-lg-2 col-md-3 col-sm-4 col-6 mb-5 mb-md-0">
+          <h4 class="text-white mb-5">SUPPORT</h4>
+          <ul class="list-unstyled">
+            <li class="mb-3"><a class="text-color" href="#">Forums</a></li>
+            <li class="mb-3"><a class="text-color" href="#">Documentation</a></li>
+            <li class="mb-3"><a class="text-color" href="#">Language</a></li>
+            <li class="mb-3"><a class="text-color" href="#">Release Status</a></li>
+          </ul>
+        </div>
+        <!-- support -->
+        <div class="col-lg-2 col-md-3 col-sm-4 col-6 mb-5 mb-md-0">
+          <h4 class="text-white mb-5">RECOMMEND</h4>
+          <ul class="list-unstyled">
+            <li class="mb-3"><a class="text-color" href="#">WordPress</a></li>
+            <li class="mb-3"><a class="text-color" href="#">LearnPress</a></li>
+            <li class="mb-3"><a class="text-color" href="#">WooCommerce</a></li>
+            <li class="mb-3"><a class="text-color" href="#">bbPress</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- copyright -->
+  <div class="copyright py-4 bg-footer">
+    <div class="container">
+      <div class="row">
+        <div class="col-sm-7 text-sm-left text-center">
+          <p class="mb-0">Copyright
+            <script>
+              var CurrentYear = new Date().getFullYear()
+              document.write(CurrentYear)
+            </script> 
+            © themefisher</p>
+        </div>
+        <div class="col-sm-5 text-sm-right text-center">
+          <ul class="list-inline">
+            <li class="list-inline-item"><a class="d-inline-block p-2" href="#"><i class="ti-facebook text-primary"></i></a></li>
+            <li class="list-inline-item"><a class="d-inline-block p-2" href="#"><i class="ti-twitter-alt text-primary"></i></a></li>
+            <li class="list-inline-item"><a class="d-inline-block p-2" href="#"><i class="ti-linkedin text-primary"></i></a></li>
+            <li class="list-inline-item"><a class="d-inline-block p-2" href="#"><i class="ti-instagram text-primary"></i></a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+</footer>
+<!-- /footer -->
+
+<!-- jQuery -->
+<script src="plugins/jQuery/jquery.min.js"></script>
+<!-- Bootstrap JS -->
+<script src="plugins/bootstrap/bootstrap.min.js"></script>
+<!-- slick slider -->
+<script src="plugins/slick/slick.min.js"></script>
+<!-- aos -->
+<script src="plugins/aos/aos.js"></script>
+<!-- venobox popup -->
+<script src="plugins/venobox/venobox.min.js"></script>
+<!-- filter -->
+<script src="plugins/filterizr/jquery.filterizr.min.js"></script>
+<!-- google map -->
+<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBu5nZKbeK-WHQ70oqOWo-_4VmwOwKP9YQ"></script>
+<script src="plugins/google-map/gmap.js"></script>
+
+<!-- Main Script -->
+<script src="js/script.js"></script>
+
+</body>
+</html>
