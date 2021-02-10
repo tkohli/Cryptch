@@ -3,7 +3,7 @@
 
 <head>
   <meta charset="utf-8">
-  <title>Ethical Hacking - Cryptch</title>
+  <title>Networking - Cryptch</title>
 
   <!-- mobile responsive meta -->
   <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -113,55 +113,28 @@
     <div class="modal-dialog modal-lg" role="document">
         <div class="modal-content rounded-0 border-0 p-4">
             <div class="modal-header border-0">
-                <h3>Apply now</h3>
+                <h3>Register</h3>
                 <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                     <span aria-hidden="true">&times;</span>
                 </button>
             </div>
             <div class="modal-body">
                 <div class="login">
-                    <form action="https://docs.google.com/forms/u/0/d/e/1FAIpQLSfSGvHxstaQPzZtdeKiyerd5tZFR8iDWyIa9LDy7q21T4o84A/formResponse" class="row">
+                    <form action="#" class="row">
                         <div class="col-12">
-                            <input type="text" class="form-control mb-3" id="signupPhone" name="entry.2005620554" placeholder="Name">
+                            <input type="text" class="form-control mb-3" id="signupPhone" name="signupPhone" placeholder="Phone">
                         </div>
                         <div class="col-12">
-                            <input type="email" class="form-control mb-3" id="signupName" name="entry.1045781291" placeholder="Email">
+                            <input type="text" class="form-control mb-3" id="signupName" name="signupName" placeholder="Name">
                         </div>
                         <div class="col-12">
-                            <input type="text" class="form-control mb-3" id="signupEmail" name="entry.1065046570" placeholder="Mobile Number">
+                            <input type="email" class="form-control mb-3" id="signupEmail" name="signupEmail" placeholder="Email">
                         </div>
                         <div class="col-12">
-                        <select id="Course" class="form-control mb-3" name="entry.280187112" placeholder="Courses"> 
-                            <option value="Computer Networking">Computer Networking</option> 
-                            <option value="Windows Operating System">Windows Operating System</option> 
-                            <option value="Computer Hardware">Computer Hardware</option> 
-                            <option value="AWS Cloud">AWS Cloud</option> 
-                            <option value="CCNA">CCNA</option> 
-                            <option value="CCNP">CCNP</option> 
-                            <option value="Ethical Hacking">Ethical Hacking</option> 
-                            <option value="Redhat Certified Solutions Associate">Redhat Certified Solutions Associate</option> 
-                            <option value="Microsoft Azure Administrtor">Microsoft Azure Administrtor</option> 
-                            <option value="Microsoft Certified Solution Associate">Microsoft Certified Solution Associate</option> 
-                            <option value="Automation with Python & Powershell">Automation with Python & Powershell</option> 
-                            <option value="Others">Others</option> 
-                        </select> 
+                            <input type="password" class="form-control mb-3" id="signupPassword" name="signupPassword" placeholder="Password">
                         </div>
                         <div class="col-12">
-                            <input type="text" class="form-control mb-3" id="signupPassword" name="entry.1166974658" placeholder="Comment (if any)">
-                        </div>                        
-                        <div class="col-12">
-                          <script type="text/javascript"> 
-                                function getOption() { 
-                                    selectElement =  
-                                            document.querySelector('#Course'); 
-                                              
-                                    output = selectElement.value; 
-                          
-                                    document.querySelector('.output').textContent 
-                                            = output; 
-                                } 
-                            </script>
-                            <button type="submit" class="btn btn-primary">Apply now</button>
+                            <button type="submit" class="btn btn-primary">SIGN UP</button>
                         </div>
                     </form>
                 </div>
@@ -174,24 +147,24 @@
     <div class="modal-dialog modal-lg" role="document">
         <div class="modal-content rounded-0 border-0 p-4">
             <div class="modal-header border-0">
-                <h3>Download Brocher</h3>
+                <h3>Login</h3>
                 <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                     <span aria-hidden="true">&times;</span>
                 </button>
             </div>
             <div class="modal-body">
-                <form action="https://docs.google.com/forms/u/0/d/e/1FAIpQLSeihSKRQiOYw8zOoeqWLYCqFtS2CrOp8fj-IvrmfoXQSyrBbg/formResponse" class="row">
+                <form action="#" class="row">
                     <div class="col-12">
-                        <input type="text" class="form-control mb-3" id="loginPhone" name="entry.370521203" placeholder="Name">
+                        <input type="text" class="form-control mb-3" id="loginPhone" name="loginPhone" placeholder="Phone">
                     </div>
                     <div class="col-12">
-                        <input type="Number" class="form-control mb-3" id="loginName" name="entry.813545581" placeholder="Number">
+                        <input type="text" class="form-control mb-3" id="loginName" name="loginName" placeholder="Name">
                     </div>
                     <div class="col-12">
-                        <input type="email" class="form-control mb-3" id="loginPassword" name="entry.174996066" placeholder="Email">
+                        <input type="password" class="form-control mb-3" id="loginPassword" name="loginPassword" placeholder="Password">
                     </div>
                     <div class="col-12">
-                        <button type="submit" class="btn btn-primary">Download Now</button>
+                        <button type="submit" class="btn btn-primary">LOGIN</button>
                     </div>
                 </form>
             </div>
@@ -230,11 +203,8 @@
                   <h4 class="price">Rs 5,000</h4>
                 </div>  
                 <div class="course-buy-now text-center">
-                  <a href="#" data-toggle="modal" data-target="#signupModal" class="btn btn-primary" data-animation-out="fadeOutRight" data-delay-out="5" data-duration-in=".3" data-animation-in="fadeInLeft" data-delay-in=".7">Apply now</a>
-                </div><br>
-                <div class="course-buy-now text-center">
-                  <a href="#" data-toggle="modal" data-target="#loginModal"  data-animation-out="fadeOutRight" data-delay-out="5" data-duration-in=".3" data-animation-in="fadeInLeft" data-delay-in=".7"
-                  >Download Curriculum</a><br></div>
+                  <a href="contact.html" class="btn btn-primary" data-animation-out="fadeOutRight" data-delay-out="5" data-duration-in=".3" data-animation-in="fadeInLeft" data-delay-in=".7">Apply now</a>
+                </div>
                 <div class="teacher-bx">
                   <div class="teacher-info">
                     <!-- <div class="teacher-thumb">
@@ -243,11 +213,9 @@
                     <div class="teacher-name">
                       <h5>Best Seller</h5>
                       <span>Ethical Hacking</span>
-
                     </div>
                   </div>
                 </div>
-
                 <div class="cours-more-info">
                   <!-- <div class="review">
                     <span>3 Review</span>
@@ -259,7 +227,6 @@
                       <li><i class="fa fa-star"></i></li>
                     </ul>
                   </div> -->
-
                   <div class="price categories">
                     <span>Categories</span>
                     <h5 class="text-primary">Cyber Security</h5>
@@ -285,7 +252,6 @@
                   <div class="ttr-post-title ">
                     <h2 class="post-title" id="overview">Become an Ethical Hacker</h2>
                   </div>
-
                   <div class="ttr-post-text">
                     <p>The Certified Ethical Hacker (C|EH) is a highly acclaimed program that offers all the mentioned training modes for aspiring ethical hackers. It is dedicated to imparting industry-required knowledge and ethical hacking skills. It is designed by the best minds of the industry, targeting site administrators, staff, dealing with network infrastructure, and other security professionals. The program leaves no stone unturned to transform its attendees into a professional, ethical hacker with the desired hands-on experience. It comes with real-time lab sessions that help in acquiring practically applicable skills.</p>
                   </div>
@@ -445,7 +411,6 @@
                     </li>
                   </ul>
               </div>
-
               <!-- <div class="" id="instructor">
                 <h4>Instructor</h4>
                 <div class="instructor-bx">
@@ -616,7 +581,6 @@
         </a>
         <p class="card-text mb-4">Red Hat Certified Engineer is known as the crown jewel of the Linux certifications. RHCE is considered to be the mid level certification, which is for administrators who will support Linux operating system as the major server platform for their working field.</p>
         <h4 class="font-size-20 text-black">Rs 4000&nbsp;&nbsp;&nbsp;&nbsp;<strike>Rs 5999</strike></h4><a href="course-single.html" class="btn btn-primary btn-sm" align="center">Apply now</a>
-        
           </div>
         </div>
       </div>
@@ -644,9 +608,8 @@
 
 <!-- footer -->
 <footer>
-
   <!-- newsletter -->
-<!--   <div class="newsletter">
+  <div class="newsletter">
     <div class="container">
       <div class="row">
         <div class="col-md-9 ml-auto bg-primary py-5 newsletter-block">
@@ -662,9 +625,9 @@
         </div>
       </div>
     </div>
-  </div> -->
+  </div>
   <!-- footer content -->
-  <div class=" bg-footer section border-bottom">
+  <div class="footer bg-footer section border-bottom">
     <div class="container">
       <div class="row">
         <div class="col-lg-4 col-sm-8 mb-5 mb-lg-0">
