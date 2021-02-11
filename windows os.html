@@ -119,21 +119,48 @@
             </div>
             <div class="modal-body">
                 <div class="login">
-                    <form action="#" class="row">
+                     <form action="https://docs.google.com/forms/u/0/d/e/1FAIpQLSfSGvHxstaQPzZtdeKiyerd5tZFR8iDWyIa9LDy7q21T4o84A/formResponse" class="row">
                         <div class="col-12">
-                            <input type="text" class="form-control mb-3" id="signupPhone" name="signupPhone" placeholder="Phone">
+                            <input type="text" class="form-control mb-3" id="signupPhone" name="entry.2005620554" placeholder="Name">
                         </div>
                         <div class="col-12">
-                            <input type="text" class="form-control mb-3" id="signupName" name="signupName" placeholder="Name">
+                            <input type="email" class="form-control mb-3" id="signupName" name="entry.1045781291" placeholder="Email">
                         </div>
                         <div class="col-12">
-                            <input type="email" class="form-control mb-3" id="signupEmail" name="signupEmail" placeholder="Email">
+                            <input type="text" class="form-control mb-3" id="signupEmail" name="entry.1065046570" placeholder="Mobile Number">
                         </div>
                         <div class="col-12">
-                            <input type="password" class="form-control mb-3" id="signupPassword" name="signupPassword" placeholder="Password">
+                        <select id="Course" class="form-control mb-3" name="entry.280187112" placeholder="Courses"> 
+                            <option value="Computer Networking">Computer Networking</option> 
+                            <option value="Windows Operating System">Windows Operating System</option> 
+                            <option value="Computer Hardware">Computer Hardware</option> 
+                            <option value="AWS Cloud">AWS Cloud</option> 
+                            <option value="CCNA">CCNA</option> 
+                            <option value="CCNP">CCNP</option> 
+                            <option value="Ethical Hacking">Ethical Hacking</option> 
+                            <option value="Redhat Certified Solutions Associate">Redhat Certified Solutions Associate</option> 
+                            <option value="Microsoft Azure Administrtor">Microsoft Azure Administrtor</option> 
+                            <option value="Microsoft Certified Solution Associate">Microsoft Certified Solution Associate</option> 
+                            <option value="Automation with Python & Powershell">Automation with Python & Powershell</option> 
+                            <option value="Others">Others</option> 
+                        </select> 
                         </div>
                         <div class="col-12">
-                            <button type="submit" class="btn btn-primary">SIGN UP</button>
+                            <input type="text" class="form-control mb-3" id="signupPassword" name="entry.1166974658" placeholder="Comment (if any)">
+                        </div>                        
+                        <div class="col-12">
+                          <script type="text/javascript"> 
+                                function getOption() { 
+                                    selectElement =  
+                                            document.querySelector('#Course'); 
+                                              
+                                    output = selectElement.value; 
+                          
+                                    document.querySelector('.output').textContent 
+                                            = output; 
+                                } 
+                            </script>
+                            <button type="submit" class="btn btn-primary">Apply now</button>
                         </div>
                     </form>
                 </div>
@@ -152,18 +179,18 @@
                 </button>
             </div>
             <div class="modal-body">
-                <form action="#" class="row">
+                 <form action="https://docs.google.com/forms/u/0/d/e/1FAIpQLSf3GY61rRZh0DOSIgt9evcf0OGgcJJt0uJ4qG3kAtj-EIjZYA/formResponse" class="row">
                     <div class="col-12">
-                        <input type="text" class="form-control mb-3" id="loginPhone" name="loginPhone" placeholder="Phone">
+                        <input type="text" class="form-control mb-3" id="loginPhone" name="entry.178928356" placeholder="Name">
                     </div>
                     <div class="col-12">
-                        <input type="text" class="form-control mb-3" id="loginName" name="loginName" placeholder="Name">
+                        <input type="tel" class="form-control mb-3" id="loginName" name="entry.218790133" placeholder="Number">
                     </div>
                     <div class="col-12">
-                        <input type="password" class="form-control mb-3" id="loginPassword" name="loginPassword" placeholder="Password">
+                        <input type="email" class="form-control mb-3" id="loginPassword" name="entry.882983086" placeholder="Email">
                     </div>
                     <div class="col-12">
-                        <button type="submit" class="btn btn-primary">LOGIN</button>
+                        <button type="submit" class="btn btn-primary">Download Now</button>
                     </div>
                 </form>
             </div>
@@ -202,8 +229,11 @@
                   <h4 class="price">Rs 4,000</h4>
                 </div>  
                 <div class="course-buy-now text-center">
-                  <a href="contact.html" class="btn btn-primary" data-animation-out="fadeOutRight" data-delay-out="5" data-duration-in=".3" data-animation-in="fadeInLeft" data-delay-in=".7">Apply now</a>
-                </div>
+                  <a href="#" data-toggle="modal" data-target="#signupModal" class="btn btn-primary" data-animation-out="fadeOutRight" data-delay-out="5" data-duration-in=".3" data-animation-in="fadeInLeft" data-delay-in=".7">Apply now</a>
+                </div><br>
+                  <div class="course-buy-now text-center">
+                  <a href="#" data-toggle="modal" data-target="#loginModal"  data-animation-out="fadeOutRight" data-delay-out="5" data-duration-in=".3" data-animation-in="fadeInLeft" data-delay-in=".7"
+                  >Download Curriculum</a><br></div>
                 <div class="teacher-bx">
                   <div class="teacher-info">
                     <!-- <div class="teacher-thumb">
@@ -515,7 +545,7 @@
           <h4 class="card-title">CCNA</h4>
         </a>
         <p class="card-text mb-4">CCNA training offers different career path like Network Technician,Network Support Engineer and others. In the CCNP training, you can also get various job opportunities like Network Analyst, Systems and Network Engineer, Network Specialist, and IT Team Leader.</p>
-        <h4 class="font-size-20 text-black">Rs 5000&nbsp;&nbsp;&nbsp;&nbsp;<strike>Rs 8000</strike></h4><a href="course-single.html" class="btn btn-primary btn-sm" align="center">Apply now</a>
+        <h4 class="font-size-20 text-black">Rs 5000&nbsp;&nbsp;&nbsp;&nbsp;<strike>Rs 8000</strike></h4><a href="CCNA.html" class="btn btn-primary btn-sm" align="center">Apply now</a>
           </div>
         </div>
       </div>
@@ -532,7 +562,7 @@
           <h4 class="card-title">Redhat System Administrator</h4>
         </a>
         <p class="card-text mb-4">Red Hat Certified Engineer is known as the crown jewel of the Linux certifications. RHCE is considered to be the mid level certification, which is for administrators who will support Linux operating system as the major server platform for their working field.</p>
-        <h4 class="font-size-20 text-black">Rs 400&nbsp;&nbsp;&nbsp;&nbsp;<strike>Rs 6000</strike></h4><a href="course-single.html" class="btn btn-primary btn-sm" align="center">Apply now</a>
+        <h4 class="font-size-20 text-black">Rs 400&nbsp;&nbsp;&nbsp;&nbsp;<strike>Rs 6000</strike></h4><a href="Red%20Hat.html" class="btn btn-primary btn-sm" align="center">Apply now</a>
           </div>
         </div>
       </div>
@@ -548,8 +578,8 @@
         <a href="course-single.html">
           <h4 class="card-title">CompTIA N+</h4>
         </a>
-        <p class="card-text mb-4"> CompTIA's Network+ validates the knowledge and skills needed to troubleshoot, configure and manage wired and wireless networks found in companies around the world. CompTIA Network+ certifies a professional-level understanding of emerging technologies, including cloud and virtualization technologies..</p>
-        <h4 class="font-size-20 text-black">Rs 3000&nbsp;&nbsp;&nbsp;&nbsp;<strike>Rs 4500</strike></h4><a href="course-single.html" class="btn btn-primary btn-sm" align="center">Apply now</a>
+        <p class="card-text mb-4"> CompTIA's Network+ validates the knowledge and skills needed to troubleshoot, configure and manage wired and wireless networks found in companies around the world. ComTIA Network+ certifies a professional-level understanding of emerging technologies, including cloud and virtualization technologies..</p>
+        <h4 class="font-size-20 text-black">Rs 3000&nbsp;&nbsp;&nbsp;&nbsp;<strike>Rs 4500</strike></h4><a href="comptia%20N+.html" class="btn btn-primary btn-sm" align="center">Apply now</a>
           </div>
         </div>
       </div>
@@ -561,30 +591,9 @@
 <!-- footer -->
 <footer>
   <!-- newsletter -->
-  <div class="newsletter">
-    <div class="container">
-      <div class="row">
-        <div class="col-md-9 ml-auto bg-primary py-5 newsletter-block">
-          <h3 class="text-white">Download Brocher</h3>
-          <form action="#">
-            <div class="input-wrapper">
-                
-                 <input type="email" class="form-control border-0" id="newsletter" name="newsletter" placeholder="Enter Your Name..."><br>
-              <input type="email" class="form-control border-0" id="newsletter" name="newsletter" placeholder="Enter Your Contact Number..."><br>
-                
-                <input type="email" class="form-control border-0" id="newsletter" name="newsletter" placeholder="Enter Your Email..."  ><button type="submit" value="send" class="btn btn-primary">Download Now</button><br>
-                
-                
-              
-            </div>
-              
-          </form>
-        </div>
-      </div>
-    </div>
-  </div>
+ 
   <!-- footer content -->
-  <div class="footer bg-footer section border-bottom">
+  <div class=" bg-footer section border-bottom">
     <div class="container">
       <div class="row">
         <div class="col-lg-4 col-sm-8 mb-5 mb-lg-0">
