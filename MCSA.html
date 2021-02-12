@@ -3,7 +3,7 @@
 
 <head>
   <meta charset="utf-8">
-  <title>Cryptch</title>
+  <title>MCSA</title>
 
   <!-- mobile responsive meta -->
   <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -27,7 +27,7 @@
   <link href="css/style.css" rel="stylesheet">
 
   <!--Favicon-->
-  <link rel="shortcut icon" href="images/favicon.png" type="image/x-icon">
+  <link rel="shortcut icon" href="images/fav.png" type="image/x-icon">
   <link rel="icon" href="images/fav.png" type="image/x-icon">
 
 </head>
@@ -62,7 +62,7 @@
   <div class="navigation w-100">
     <div class="container">
       <nav class="navbar navbar-expand-lg navbar-dark p-0">
-        <a class="navbar-brand" href="index.html"><img src="images/logo.png" alt="logo"></a>
+        <a class="navbar-brand" href="index1.html"><img src="images/logo.png" alt="logo"></a>
         <button class="navbar-toggler rounded-0" type="button" data-toggle="collapse" data-target="#navigation"
           aria-controls="navigation" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
@@ -71,7 +71,7 @@
         <div class="collapse navbar-collapse" id="navigation">
           <ul class="navbar-nav ml-auto text-center">
             <li class="nav-item active">
-              <a class="nav-link" href="index.html">Home</a>
+              <a class="nav-link" href="index1.html">Home</a>
             </li>
             <li class="nav-item dropdown view">
               <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown"
@@ -79,16 +79,19 @@
                 COURSES
               </a>
               <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                <a class="dropdown-item" href="teacher.html">Computer Networking</a>
-                <a class="dropdown-item" href="teacher-single.html">Windows Operating System</a>
-                <a class="dropdown-item" href="notice.html">Computer Hardware</a>
+                <a class="dropdown-item" href="computer network.html">Computer Networking</a>
+                <a class="dropdown-item" href="windows os.html">Windows Operating System</a>
+                <a class="dropdown-item" href="computer Hardware.html">Computer Hardware</a>
                 <a class="dropdown-item" href="AWS.html">AWS Cloud</a>
-                <a class="dropdown-item" href="research.html">CCNA & CCNP</a>
-                <a class="dropdown-item" href="scholarship.html">Ethical Hacking</a>
-                <a class="dropdown-item" href="course-single.html">Redhat Certified Solutions Associate</a>
+                <a class="dropdown-item" href="CCNA.html">CCNA</a>
+                <a class="dropdown-item" href="CCNP.html">CCNP</a>
+                <a class="dropdown-item" href="ethicalhacking.html">Ethical Hacking</a>
+                <a class="dropdown-item" href="Red Hat.html">Redhat Certified Solutions Associate</a>
                 <a class="dropdown-item" href="Azure.html">Microsoft Azure Administrtor</a>
                 <a class="dropdown-item" href="MCSA.html">Microsoft Certified Solution Associate</a>
-                <a class="dropdown-item" href="blog-single.html">Automation with Python & Powershell</a>
+                <a class="dropdown-item" href="Automation with Python and PowerShell.html">Automation with Python & Powershell</a>
+                <a class="dropdown-item" href="IPv6.html">IPv6</a>
+                <a class="dropdown-item" href="courses.html">See all courses</a>
               </div>
               
             </li>
@@ -119,21 +122,48 @@
             </div>
             <div class="modal-body">
                 <div class="login">
-                    <form action="#" class="row">
+                    <form action="https://docs.google.com/forms/u/0/d/e/1FAIpQLSfSGvHxstaQPzZtdeKiyerd5tZFR8iDWyIa9LDy7q21T4o84A/formResponse" class="row">
                         <div class="col-12">
-                            <input type="text" class="form-control mb-3" id="signupPhone" name="signupPhone" placeholder="Phone">
+                            <input type="text" class="form-control mb-3" id="signupPhone" name="entry.2005620554" placeholder="Name">
                         </div>
                         <div class="col-12">
-                            <input type="text" class="form-control mb-3" id="signupName" name="signupName" placeholder="Name">
+                            <input type="email" class="form-control mb-3" id="signupName" name="entry.1045781291" placeholder="Email">
                         </div>
                         <div class="col-12">
-                            <input type="email" class="form-control mb-3" id="signupEmail" name="signupEmail" placeholder="Email">
+                            <input type="text" class="form-control mb-3" id="signupEmail" name="entry.1065046570" placeholder="Mobile Number">
                         </div>
                         <div class="col-12">
-                            <input type="password" class="form-control mb-3" id="signupPassword" name="signupPassword" placeholder="Password">
+                        <select id="Course" class="form-control mb-3" name="entry.280187112" placeholder="Courses"> 
+                            <option value="Computer Networking">Computer Networking</option> 
+                            <option value="Windows Operating System">Windows Operating System</option> 
+                            <option value="Computer Hardware">Computer Hardware</option> 
+                            <option value="AWS Cloud">AWS Cloud</option> 
+                            <option value="CCNA">CCNA</option> 
+                            <option value="CCNP">CCNP</option> 
+                            <option value="Ethical Hacking">Ethical Hacking</option> 
+                            <option value="Redhat Certified Solutions Associate">Redhat Certified Solutions Associate</option> 
+                            <option value="Microsoft Azure Administrtor">Microsoft Azure Administrtor</option> 
+                            <option value="Microsoft Certified Solution Associate">Microsoft Certified Solution Associate</option> 
+                            <option value="Automation with Python & Powershell">Automation with Python & Powershell</option> 
+                            <option value="Others">Others</option> 
+                        </select> 
                         </div>
                         <div class="col-12">
-                            <button type="submit" class="btn btn-primary">SIGN UP</button>
+                            <input type="text" class="form-control mb-3" id="signupPassword" name="entry.1166974658" placeholder="Comment (if any)">
+                        </div>                        
+                        <div class="col-12">
+                          <script type="text/javascript"> 
+                                function getOption() { 
+                                    selectElement =  
+                                            document.querySelector('#Course'); 
+                                              
+                                    output = selectElement.value; 
+                          
+                                    document.querySelector('.output').textContent 
+                                            = output; 
+                                } 
+                            </script>
+                            <button type="submit" class="btn btn-primary">Apply now</button>
                         </div>
                     </form>
                 </div>
@@ -152,18 +182,18 @@
                 </button>
             </div>
             <div class="modal-body">
-                <form action="#" class="row">
+                 <form action="https://docs.google.com/forms/u/0/d/e/1FAIpQLSe0cA70nvAeDlVimoMZeEIxioaUYjb5mIYFuzBYEXYwor-ctQ/formResponse" class="row">
                     <div class="col-12">
-                        <input type="text" class="form-control mb-3" id="loginPhone" name="loginPhone" placeholder="Phone">
+                        <input type="text" class="form-control mb-3" id="loginPhone" name="entry.471823072" placeholder="Name">
                     </div>
                     <div class="col-12">
-                        <input type="text" class="form-control mb-3" id="loginName" name="loginName" placeholder="Name">
+                        <input type="tel" class="form-control mb-3" id="loginName" name="entry.2034518622" placeholder="Number">
                     </div>
                     <div class="col-12">
-                        <input type="password" class="form-control mb-3" id="loginPassword" name="loginPassword" placeholder="Password">
+                        <input type="email" class="form-control mb-3" id="loginPassword" name="entry.711851566" placeholder="Email">
                     </div>
                     <div class="col-12">
-                        <button type="submit" class="btn btn-primary">LOGIN</button>
+                        <button type="submit" class="btn btn-primary">Download Now</button>
                     </div>
                 </form>
             </div>
@@ -202,8 +232,11 @@
                   <h4 class="price">Rs 5,000</h4>
                 </div>  
                 <div class="course-buy-now text-center">
-                  <a href="contact.html" class="btn btn-primary" data-animation-out="fadeOutRight" data-delay-out="5" data-duration-in=".3" data-animation-in="fadeInLeft" data-delay-in=".7">Apply now</a>
-                </div>
+                  <a href="#" data-toggle="modal" data-target="#signupModal" class="btn btn-primary" data-animation-out="fadeOutRight" data-delay-out="5" data-duration-in=".3" data-animation-in="fadeInLeft" data-delay-in=".7">Apply now</a>
+                </div><br>
+                <div class="course-buy-now text-center">
+                  <a href="#" data-toggle="modal" data-target="#loginModal"  data-animation-out="fadeOutRight" data-delay-out="5" data-duration-in=".3" data-animation-in="fadeInLeft" data-delay-in=".7"
+                  >Download Curriculum</a><br></div>
                 <div class="teacher-bx">
                   <div class="teacher-info">
                     <!-- <div class="teacher-thumb">
@@ -228,7 +261,7 @@
                   </div> -->
                   <div class="price categories">
                     <span>Categories</span>
-                    <h5 class="text-primary">Cloud Computing</h5>
+                    <h5 class="text-primary">Microsoft</h5>
                   </div>
                 </div>
                 <div class="course-info-list scroll-page">
@@ -245,7 +278,7 @@
             <div class="col-lg-9 col-md-8 col-sm-12">
               <div class="courses-post">
                 <!-- <div class="ttr-post-media media-effect"> -->
-                  <img class="img-fluid w-100" src="images/courses/55.png" alt="banner-feature">
+                  <img class="img-fluid w-100" src="images/courses/5.png" alt="banner-feature">
                 <!-- </div> -->
                 <div class="ttr-post-info">
                   <div class="ttr-post-title ">
@@ -547,54 +580,52 @@
       <!-- course item -->
       <div class="col-lg-4 col-sm-6 mb-5">
         <div class="card p-0 border-primary rounded-0 hover-shadow">
-          <img class="card-img-top rounded-0" src="images/courses/course-1.jpg" alt="course thumb">
+          <img class="card-img-top rounded-0" src="images/courses/77.jpg" alt="course thumb">
           <div class="card-body">
             <ul class="list-inline mb-2">
-              <li class="list-inline-item"><i class="ti-calendar mr-1 text-color"></i>02-14-2018</li>
-              <li class="list-inline-item"><a class="text-color" href="#">Humanities</a></li>
+              <li class="list-inline-item"><a class="text-color" href="#">Cloud Computing</a></li>
             </ul>
-            <a href="course-single.html">
-              <h4 class="card-title">Photography</h4>
+            <a href="Azure.html">
+              <h4 class="card-title">Microsoft Azure</h4>
             </a>
-            <p class="card-text mb-4"> Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor
-              incididunt ut labore et dolore magna.</p>
-            <a href="course-single.html" class="btn btn-primary btn-sm">Apply now</a>
+            <p class="card-text mb-4"> The Azure cloud platform is more than 200 products and cloud services designed to help you bring new solutions to life—to solve today’s challenges and create the future.</p>
+            <h4 class="font-size-20 text-black">Rs 4500&nbsp;&nbsp;&nbsp;&nbsp;<strike>Rs 12000</strike></h4>
+            <a href="Azure.html" class="btn btn-primary btn-sm">Apply now</a>
+            
           </div>
         </div>
       </div>
       <!-- course item -->
       <div class="col-lg-4 col-sm-6 mb-5">
         <div class="card p-0 border-primary rounded-0 hover-shadow">
-          <img class="card-img-top rounded-0" src="images/courses/course-2.jpg" alt="course thumb">
+          <img class="card-img-top rounded-0" src="images/courses/2.png" alt="course thumb">
           <div class="card-body">
             <ul class="list-inline mb-2">
-              <li class="list-inline-item"><i class="ti-calendar mr-1 text-color"></i>02-14-2018</li>
-              <li class="list-inline-item"><a class="text-color" href="#">Humanities</a></li>
+              <li class="list-inline-item"><a class="text-color" href="#">Cloud Computing</a></li>
             </ul>
-            <a href="course-single.html">
-              <h4 class="card-title">Programming</h4>
+            <a href="AWS.html">
+              <h4 class="card-title">AWS Cloud</h4>
             </a>
-            <p class="card-text mb-4"> Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor
-              incididunt ut labore et dolore magna.</p>
-            <a href="course-single.html" class="btn btn-primary btn-sm">Apply now</a>
+            <p class="card-text mb-4"> Amazon Web Services (AWS) is the world’s generally most extensively embraced cloud platform, offering more than 165 completely highlighted administrations from server around.</p>
+            <h4 class="font-size-20 text-black">Rs 5000&nbsp;&nbsp;&nbsp;&nbsp;<strike>Rs 15000</strike></h4>
+            <a href="AWS.html" class="btn btn-primary btn-sm">Apply now</a>
           </div>
         </div>
       </div>
       <!-- course item -->
       <div class="col-lg-4 col-sm-6 mb-5">
         <div class="card p-0 border-primary rounded-0 hover-shadow">
-          <img class="card-img-top rounded-0" src="images/courses/course-3.jpg" alt="course thumb">
+          <img class="card-img-top rounded-0" src="images/courses/1.png" alt="course thumb">
           <div class="card-body">
             <ul class="list-inline mb-2">
-              <li class="list-inline-item"><i class="ti-calendar mr-1 text-color"></i>02-14-2018</li>
-              <li class="list-inline-item"><a class="text-color" href="#">Humanities</a></li>
+              <li class="list-inline-item"><a class="text-color" href="#">Cyber Security</a></li>
             </ul>
-            <a href="course-single.html">
-              <h4 class="card-title">Lifestyle Archives</h4>
+           <a href="ethicalhacking.html">
+              <h4 class="card-title">Ethical Hacking</h4>
             </a>
-            <p class="card-text mb-4"> Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor
-              incididunt ut labore et dolore magna.</p>
-            <a href="course-single.html" class="btn btn-primary btn-sm">Apply now</a>
+            <p class="card-text mb-4"> One of the most in-demand positions is of ethical hackers – security professionals who can penetrate the security infrastructure of an organization to identify existing and vulnerabilities.</p>
+            <h4 class="font-size-20 text-black">Rs 5000&nbsp;&nbsp;&nbsp;&nbsp;<strike>Rs 10000</strike></h4>
+            <a href="ethicalhacking.html" class="btn btn-primary btn-sm">Apply now</a>
           </div>
         </div>
       </div>
@@ -606,7 +637,7 @@
 <!-- footer -->
 <footer>
   <!-- newsletter -->
-  <div class="newsletter">
+  <!--<div class="newsletter">
     <div class="container">
       <div class="row">
         <div class="col-md-9 ml-auto bg-primary py-5 newsletter-block">
@@ -620,14 +651,14 @@
         </div>
       </div>
     </div>
-  </div>
+  </div>-->
   <!-- footer content -->
-  <div class="footer bg-footer section border-bottom">
+  <div class="bg-footer section border-bottom">
     <div class="container">
       <div class="row">
         <div class="col-lg-4 col-sm-8 mb-5 mb-lg-0">
           <!-- logo -->
-          <a class="logo-footer" href="index.html"><img class="img-fluid mb-4" src="images/logo.png" alt="logo"></a>
+          <a class="logo-footer" href="index1.html"><img class="img-fluid mb-4" src="images/logo.png" alt="logo"></a>
           <ul class="list-unstyled">
             <li class="mb-2">23621 15 Mile Rd #C104, Clinton MI, 48035, New York, USA</li>
             <li class="mb-2">+1 (2) 345 6789</li>
