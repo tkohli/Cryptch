@@ -1126,18 +1126,24 @@ textarea.form-control {
 
 @media (max-width: 991px) {
   .navigation {
+
     background: #ecefe0;
   }
 }
 
 @media (max-width: 991px) {
   .navbar-collapse {
+
     background: #8b3732;
   }
 }
-.custom-toggler.navbar-toggler { 
-    border-color: lightgreen; 
+.custom-toggler .navbar-toggler-icon {
+  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(0,0,0, 0.5)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
 }
+
+.custom-toggler.navbar-toggler {
+  border-color: rgb(0,0,0);
+} 
 .navbar-nav {
   padding-left: 50px;
   background: #8b3732 ;
@@ -1145,6 +1151,7 @@ textarea.form-control {
 
 @media (max-width: 991px) {
   .navbar-nav  {
+
     padding-left: 0;
     background: #8b3732;
   }
@@ -1210,6 +1217,8 @@ link:focus,
 
 @media (max-width: 991px) {
   .navbar-expand-lg .navbar-nav .nav-link {
+
+    border-color: lightgreen; 
     padding: 20px;
   }
 }
@@ -1247,6 +1256,8 @@ link:focus,
 
 @media (max-width: 991px) {
   .navbar .dropdown-menu {
+
+    border-color: lightgreen; 
     display: none;
     opacity: 1;
     visibility: visible;
@@ -1263,6 +1274,7 @@ link:focus,
 
 @media (max-width: 991px) {
   .navbar .dropdown-menu.show {
+    border-color: lightgreen; 
     visibility: visible;
     display: block;
   }
@@ -1278,6 +1290,7 @@ link:focus,
 
 @media (max-width: 991px) {
   .navbar .dropdown-item {
+    border-color: lightgreen; 
     text-align: center;
   }
 }
@@ -1386,6 +1399,7 @@ link:focus,
 
 @media (max-width: 991px) {
   .feature-blocks {
+
     margin-top: 0;
     padding: 50px;
   }
