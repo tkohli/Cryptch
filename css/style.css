@@ -1126,13 +1126,13 @@ textarea.form-control {
 
 @media (max-width: 991px) {
   .navigation {
-    background: #8b3732;
+    background: #ecefe0;
   }
 }
 
 @media (max-width: 991px) {
   .navbar-collapse {
-    background: #ecefe0;
+    background: #8b3732;
   }
 }
 
@@ -1144,7 +1144,7 @@ textarea.form-control {
 @media (max-width: 991px) {
   .navbar-nav {
     padding-left: 0;
-    background: #ecefe0;
+    background: #8b3732;
   }
 }
 
