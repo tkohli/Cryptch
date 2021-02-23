@@ -1135,14 +1135,16 @@ textarea.form-control {
     background: #8b3732;
   }
 }
-
+.custom-toggler.navbar-toggler { 
+    border-color: lightgreen; 
+}
 .navbar-nav {
   padding-left: 50px;
   background: #8b3732 ;
 }
 
 @media (max-width: 991px) {
-  .navbar-nav {
+  .navbar-nav  {
     padding-left: 0;
     background: #8b3732;
   }
