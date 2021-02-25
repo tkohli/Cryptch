@@ -15,7 +15,11 @@ VERSION:	Versoin Number
   font-weight: normal;
   font-style: normal;
 }
-
+@media (max-width:991px) {
+  img#optionalstuff {
+    display: none;
+  }
+}
 body {
   line-height: 1.2;
   font-family: "Poppins", sans-serif;
