@@ -113,7 +113,7 @@ transform: translate(-50%, 0);width: 900% !important;
                                       <div class="course-price view">
                                                 <p> Limited time offer</p>
                                                 <div>Rs 6,000 <del>Rs 15,000</del></div>
-                                              </div></p><a>
+                                              </div></p></a>
                                     </div>
                                 </div>
                               </div>
@@ -125,7 +125,7 @@ transform: translate(-50%, 0);width: 900% !important;
                                       <div class="course-price view">
                                                 <p> Limited time offer</p>
                                                 <div>Rs 3,500 <del>Rs 5,000</del></div>
-                                              </div></p><a>
+                                              </div></p></a>
                                     </div>
                                 </div>
                               </div>                           
@@ -201,7 +201,7 @@ transform: translate(-50%, 0);width: 300% !important;
               <h5 class="card-title">Hardware and Network Engineer <br>+ 1 month Internship</h5>
               <p class="card-text">This is complete course focusing on practicals that will make you a hardware and network engineer.
               </p>
-              <p class="card-text"><small><b>Duration: 5 months + 1 month Internship</b></small></p><a>
+              <p class="card-text"><small><b>Duration: 5 months + 1 month Internship</b></small></p></a>
             </div>
           </div>
         </div></a>
@@ -258,7 +258,7 @@ transform: translate(-50%, 0);width: 300% !important;
 -o-transform: translate(-95%, 0);
 transform: translate(-85%, 0);width: 1500% !important;
     height: 490% !important;overflow-x: hidden;
-    '> 
+    '> </li>
             
             <li class = 'container'><img src="http://cdn.mos.cms.futurecdn.net/6t8Zh249QiFmVnkQdCCtHK.jpg" width = '280%' class="img-fluid"><br>
             <a class = 'dropdown-item ' href="services.html" style = 'width: 300% !important;' ><b>Desktop and laptop</b></a>
