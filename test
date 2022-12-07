@@ -1,8 +1,7 @@
 <li class="nav-item dropdown view"><a class="nav-link dropdown-toggle" href="careercourses.html" id="navbarDropdown" role="button"
      aria-haspopup="true" aria-expanded="false">
   Career Courses & Internships
-  </a>
-  <ul role="menu" class="dropdown-menu pre-scrollable" style = ' right: auto;left: 50%;
+  </a>  <ul role="menu" class="dropdown-menu pre-scrollable" style = ' right: auto;left: 50%;
      -webkit-transform: translate(-50%, 0);
      -o-transform: translate(-50%, 0);
      transform: translate(-50%, 0);width: 900px !important;
