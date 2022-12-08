@@ -6,8 +6,7 @@
      -o-transform: translate(-50%, 0);
      transform: translate(-50%, 0);width: 900px !important;
      max-height: 75vh;
-     '>
-     <!-- <div class="card mb-3" style="max-width: 540%;">
+     '>  <!-- <div class="card mb-3" style="max-width: 540%;">
         <div class="row no-gutters">
            <a href="CCHNE.html">
               <div class="col-md-4" align='center'>
