@@ -2,8 +2,7 @@
      aria-haspopup="true" aria-expanded="false">
   Career Courses & Internships
   </a>  <ul role="menu" class="dropdown-menu pre-scrollable" style = ' right: auto;left: 50%;
-     -webkit-transform: translate(-50%, 0);
-     -o-transform: translate(-50%, 0);
+     -webkit-transform: translate(-50%, 0);     -o-transform: translate(-50%, 0);
      transform: translate(-50%, 0);width: 900px !important;
      max-height: 75vh;
      '>  <!-- <div class="card mb-3" style="max-width: 540%;">
