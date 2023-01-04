@@ -9,8 +9,7 @@
               <div class="col-md-4" align='center'>
                  <img src="https://media.istockphoto.com/photos/engineers-checking-servers-in-server-room-picture-id1094914600?b=1&k=6&m=1094914600&s=170667a&w=0&h=Llc4dXU2auP_MFi1CpPk1jOA_6MnF2bkzMMVNjzHAoc=" class="card-img" alt="...">
            <a href = 'CCHNE.html' class = 'btn' align = 'center'>Register now<br>See course details</a>
-           </div>
-           <div class="col-md-8">
+           </div><div class="col-md-8">
               <a href = 'CCHNE.html'>
                  <div class="card-body">
                     <h5 class="card-title">Hardware and Network Engineer <br>+ 1 month Internship</h5>
