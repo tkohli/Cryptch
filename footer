@@ -142,7 +142,7 @@ transform: translate(-50%, 0);width: 900% !important;
                   </div></a>
                 </div>
             </li>
-                <li class = 'container' style = 'width: 350px !important;'>
+               <li class = 'container' style = 'width: 350px !important;'>
             <a class = 'dropdown-item '  >
             <b>Best offers</b></a>
               <div class="card mb-3 " style="max-width: 290%;">
