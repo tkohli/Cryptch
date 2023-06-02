@@ -80,6 +80,8 @@
    <body>
       <!-- header -->
       <div include-html="header.html", id="header-placeholder"></div>
+      <div include-html="popup.html", id="popup-placeholder"></div>
+      
       <!-- /header -->
       <!-- hero slider -->
       <section class="hero-section overlay bg-cover" data-background="images/banner/banner-1.jpg">
@@ -400,6 +402,8 @@
         $(document).ready(function() {
           $('#header-placeholder').load('header.html');
           $('#footer-placeholder').load('footer.html');
+          $('#popup-placeholder').load('popup.html');
+
         });
       </script>
    </body>
