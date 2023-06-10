@@ -1,0 +1,401 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Bootstrap Example</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+</head>
+<body>
+
+<style>
+.testimonial1_section {
+  display: block;
+  overflow: hidden;
+}
+.testimonial1_section:after {
+  display: block;
+  clear: both;
+  content: "";
+}
+.testimonial1_section .about1_content {
+  background-color: #020d26;
+  padding-top: 77px;
+  padding-right: 210px;
+  padding-bottom: 62px;
+  position: relative;
+}
+.testimonial1_section .about1_content .background1_layer {
+  background-color: #020d26;
+  width: auto;
+  margin-left: -200px;
+  right: 0;
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  top: 0;
+  left: 0;
+}
+.testimonial1_section .about1_content .layer1_content {
+  position: relative;
+  z-index: 9;
+  height: 100%;
+}
+.testimonial1_section .about1_content .layer1_content .section1_title {
+  margin-bottom: 24px;
+  position: relative;
+}
+.testimonial1_section .about1_content .layer1_content .section1_title:after {
+  display: block;
+  clear: both;
+  content: "";
+}
+.testimonial1_section .about1_content .layer1_content .section1_title h5 {
+  color: #fff;
+  font-family: "Open Sans";
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 28px;
+  color: #ff5e14;
+  margin-top: -5px;
+  margin-bottom: 6px;
+}
+.testimonial1_section .about1_content .layer1_content .section1_title h2 {
+  font-family: "Titillium Web";
+  font-weight: 300;
+  font-size: 45px;
+  line-height: 50px;
+  padding-bottom: 51px;
+  margin-bottom: 0px;
+  color: #fff;
+}
+.testimonial1_section .about1_content .layer1_content .section1_title h2 strong {
+  font-weight: 600 !important;
+  width: 100%;
+  display: block;
+}
+.testimonial1_section .about1_content .layer1_content .section1_title .heading1_line {
+  position: relative;
+}
+.testimonial1_section .about1_content .layer1_content .section1_title .heading1_line span {
+  transition: all 0.5s ease-in-out 0s;
+  position: relative;
+}
+.testimonial1_section .about1_content .layer1_content .section1_title .heading1_line span:after {
+  content: "";
+  right: auto;
+  left: 69px;
+  position: absolute;
+  bottom: 28px;
+  width: 17px;
+  margin-left: 0;
+  border-bottom-width: 3px;
+  border-bottom-color: #cacaca;
+  border-bottom-style: solid;
+}
+.testimonial1_section .about1_content .layer1_content .section1_title .heading1_line:after {
+  content: "";
+  left: 1%;
+  margin-left: 0;
+  position: absolute;
+  bottom: 28px;
+  width: 59px;
+  border-bottom-width: 3px;
+  border-bottom-style: solid;
+  border-bottom-color: #ff5e14;
+}
+.testimonial1_section .about1_content .layer1_content .section1_title p {
+  color: #fff;
+  margin: 0 0 15px;
+}
+.testimonial1_section .about1_content .layer1_content a {
+  color: #fff;
+  text-transform: capitalize;
+  font-size: 15px;
+  font-weight: 600;
+  text-decoration: none;
+  transition: all 0.3s;
+}
+.testimonial1_section .about1_content .layer1_content a i {
+  font-size: 18px;
+  vertical-align: middle;
+}
+.testimonial1_section .about1_content .layer1_content a:hover {
+  color: #ff5e14;
+}
+.testimonial1_section .testimonial1_box {
+  margin-top: 60px !important;
+  position: relative;
+}
+.testimonial1_section .testimonial1_box .testimonial1_container {
+  background-color: #ff5e14;
+  margin-left: -170px !important;
+  position: relative;
+}
+.testimonial1_section .testimonial1_box .testimonial1_container .background1_layer {
+  background-color: #ff5e14;
+  width: auto;
+  margin-right: -200px;
+  right: 0;
+  background-image: url(../images/map.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  position: absolute;
+  height: 100%;
+  top: 0;
+  left: 0;
+}
+.testimonial1_section .testimonial1_box .testimonial1_container .layer1_content {
+  position: relative;
+  z-index: 9;
+  height: 100%;
+}
+.testimonial1_section .testimonial1_box .testimonial1_container .layer1_content .testimonial1_owlCarousel {
+  display: block;
+  position: relative;
+}
+.testimonial1_section .testimonial1_box .testimonial1_container .layer1_content .testimonial1_owlCarousel .testimonials1 {
+  margin: 10px 0 10px 0;
+  padding: 62px 0px 72px 50px;
+  position: relative;
+  text-align: center;
+}
+.testimonial1_section .testimonial1_box .testimonial1_container .layer1_content .testimonial1_owlCarousel .testimonials1 .testimonial1_content {
+  box-shadow: 0 0 25px 0 rgba(0, 0, 0, 0.13);
+  margin-left: 150px;
+  margin-top: 69px;
+  padding: 45px 40px 45px 40px;
+  z-index: 1;
+  position: relative;
+  background-color: #fff;
+  transition: all 0.5s ease-in-out 0s;
+}
+.testimonial1_section .testimonial1_box .testimonial1_container .layer1_content .testimonial1_owlCarousel .testimonials1 .testimonial1_content .testimonial1_caption {
+  margin-bottom: 15px;
+  position: relative;
+}
+.testimonial1_section .testimonial1_box .testimonial1_container .layer1_content .testimonial1_owlCarousel .testimonials1 .testimonial1_content .testimonial1_caption:after {
+  content: "";
+  width: 30px;
+  display: block;
+  height: 2px;
+  text-align: center;
+  left: 46%;
+  margin-top: 6px;
+  background-color: #ff5e14;
+  position: absolute;
+}
+.testimonial1_section .testimonial1_box .testimonial1_container .layer1_content .testimonial1_owlCarousel .testimonials1 .testimonial1_content .testimonial1_caption h6 {
+  padding-top: 0;
+  margin-bottom: -5px;
+  font-size: 19px;
+  font-weight: 600;
+  line-height: 24px;
+  color: #ff5e14;
+}
+.testimonial1_section .testimonial1_box .testimonial1_container .layer1_content .testimonial1_owlCarousel .testimonials1 .testimonial1_content .testimonial1_caption span {
+  font-size: 12px;
+  color: #9f9f9f;
+  margin: 0;
+}
+.testimonial1_section .testimonial1_box .testimonial1_container .layer1_content .testimonial1_owlCarousel .testimonials1 .testimonial1_content p {
+  padding: 0;
+  margin: 0;
+  padding-top: 10px;
+  font-size: 16px;
+  line-height: 28px;
+  font-weight: 400;
+  color: #ff5e14;
+  font-style: italic;
+}
+.testimonial1_section .testimonial1_box .testimonial1_container .layer1_content .testimonial1_owlCarousel .testimonials1 .images1_box .testimonial1_img {
+  border: none;
+  position: absolute;
+  top: 0;
+  left: 55px;
+  top: 80px;
+}
+.testimonial1_section .testimonial1_box .testimonial1_container .layer1_content .testimonial1_owlCarousel .testimonials1 .images1_box .testimonial1_img img {
+  border: 5px solid #fff;
+  box-shadow: 0 0 15px 0 rgba(0, 0, 0, 0.1);
+  width: 35%;
+}
+.testimonial1_section .testimonial1_box .testimonial1_container .owl-nav .owl-prev {
+  position: absolute;
+  top: 165px;
+  right: 42px;
+  border-radius: 0;
+  background: #ff5e14;
+  display: block;
+  outline: 0;
+  width: 34px;
+  line-height: 34px;
+  height: 34px;
+  color: #fff;
+  font-size: 23px;
+  margin-top: -20px;
+  transition: all 0.3s ease-in-out;
+}
+.testimonial1_section .testimonial1_box .testimonial1_container .owl-nav .owl-prev:hover {
+  background: #020d26;
+}
+.testimonial1_section .testimonial1_box .testimonial1_container .owl-nav .owl-next {
+  position: absolute;
+  top: 165px;
+  right: 5px;
+  border-radius: 0;
+  display: block;
+  background: #ff5e14;
+  outline: 0;
+  width: 34px;
+  text-align: center;
+  line-height: 34px;
+  height: 34px;
+  color: #fff;
+  font-size: 23px;
+  margin-top: -20px;
+  transition: all 0.3s ease-in-out;
+}
+.testimonial1_section .testimonial1_box .testimonial1_container .owl-nav .owl-next:hover {
+  background: #020d26;
+}
+
+@media all and (max-width: 991px) {
+  .testimonial1_section .about1_content {
+    padding-right: 15px !important;
+  }
+  .testimonial1_section .about1_content .background1_layer {
+    width: 200% !important;
+  }
+  .testimonial1_section .testimonial1_box {
+    margin-top: 0 !important;
+  }
+  .testimonial1_section .testimonial1_box .background1_layer {
+    width: 200% !important;
+    margin-left: -200px;
+  }
+  .testimonial1_section .testimonial1_box .about1_content {
+    padding-left: 15px !important;
+    padding-right: 15px !important;
+    margin-top: 28% !important;
+  }
+  .testimonial1_section .testimonial1_box .testimonial1_container {
+    margin-left: -15px !important;
+  }
+  .testimonial1_section .testimonial1_box .testimonial1_container .testimonials1 {
+    margin: 0px 0 20px 0;
+  }
+  .testimonial1_section .testimonial1_box .testimonial1_container .testimonials1 .testimonial1_content {
+    margin-left: -36px !important;
+  }
+  .testimonial1_section .testimonial1_box .testimonial1_container .testimonials1 .images1_box {
+    display: none;
+  }
+}
+</style>
+   <!-- Google font -->
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Titillium+Web:400,400i,600,600i,700,700i,900">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:400,400i,600,600i,700,700i,800,800i">
+        <!-- carousel -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.css">
+<section class="testimonial1_section">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-7">
+                       <div class="about1_content">
+                            <div class="background1_layer"></div>
+                            <div class="layer1_content">
+                                <div class="section1_title">
+                                    <h5>CLIENTS</h5>
+                                    <h2>Happy with<strong>Customers & Clients</strong></h2>
+                                    <div class="heading1_line"><span></span></div>
+                                    <p>If you need any industrial solution we are available for you. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                                </div>
+                                <a href="#">Contact Us<i class="icofont-long-arrow-right"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-5">
+                        <div class="testimonial1_box">
+                            <div class="testimonial1_container">
+                                <div class="background1_layer"></div>
+                                <div class="layer1_content">
+                                    <div class="testimonial1_owlCarousel owl-carousel">
+                                        <div class="testimonials1"> 
+                                            <div class="testimonial1_content">
+                                                <div class="testimonial1_caption">
+                                                    <h6>Robert Clarkson</h6>
+                                                    <span>CEO, Axura</span>
+                                                </div>
+                                                <p>The team at Tectxon industry is very talented, dedicated, well organized and knowledgeable. I was most satisfied with the quality of the workmanship. They did excellent work.</p>
+                                            </div>
+                                            <div class="images1_box">
+                                                <div class="testimonial1_img">
+                                                    <img class="img-center" src="https://cdn.pixabay.com/photo/2017/08/30/17/27/business-woman-2697954_960_720.jpg" alt="images not found">
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="testimonials1"> 
+                                            <div class="testimonial1_content">
+                                                <div class="testimonial1_caption">
+                                                    <h6>Robert Clarkson</h6>
+                                                    <span>CEO, Axura</span>
+                                                </div>
+                                                <p>The team at Tectxon industry is very talented, dedicated, well organized and knowledgeable. I was most satisfied with the quality of the workmanship. They did excellent work.</p>
+                                            </div>
+                                            <div class="images1_box">
+                                                <div class="testimonial1_img">
+                                                    <img class="img-center" src="https://cdn.pixabay.com/photo/2016/02/19/10/56/man-1209494_960_720.jpg" alt="images not found">
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="testimonials1"> 
+                                            <div class="testimonial1_content">
+                                                <div class="testimonial1_caption">
+                                                    <h6>Robert Clarkson</h6>
+                                                    <span>CEO, Axura</span>
+                                                </div>
+                                                <p>The team at Tectxon industry is very talented, dedicated, well organized and knowledgeable. I was most satisfied with the quality of the workmanship. They did excellent work.</p>
+                                            </div>
+                                            <div class="images1_box">
+                                                <div class="testimonial1_img">
+                                                    <img class="img-center" src="https://cdn.pixabay.com/photo/2017/09/21/19/06/woman-2773007_960_720.jpg" alt="images not found">
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+                <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.js"></script>
+<script>$('.testimonial1_owlCarousel').owlCarousel({
+    loop:true,
+    margin:10,
+    dots:false,
+    nav:true,
+    autoplay:false,   
+    smartSpeed: 3000, 
+    autoplayTimeout:4000,
+    responsive:{
+        0:{
+            items:1
+        },
+        600:{
+            items:1
+        },
+        1000:{
+            items:1
+        }
+    }
+})</script>
+</body>
+</html>

@@ -77,6 +77,10 @@
 
   gtag('config', 'G-HM19E5FJ2K');
 </script>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
    </head>
    <body>
       <!-- header -->
@@ -330,6 +334,9 @@
          </div>
       </section>
       <!-- /courses -->
+      <!-- review -->
+      <div include-html="review.html", id="review-placeholder"></div>
+      <!-- /review -->
       <!-- cta -->
       <section class="section bg-primary">
          <div class="container">
@@ -365,6 +372,27 @@
       <script src="plugins/google-map/gmap.js"></script>
       <!-- Main Script -->
       <script src="js/script.js"></script>
+      <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.js"></script>
+      <script>$('.testimonial1_owlCarousel').owlCarousel({
+          loop:true,
+          margin:10,
+          dots:false,
+          nav:true,
+          autoplay:false,   
+          smartSpeed: 3000, 
+          autoplayTimeout:4000,
+          responsive:{
+              0:{
+                  items:1
+              },
+              600:{
+                  items:1
+              },
+              1000:{
+                  items:1
+              }
+          }
+      })</script>
       <script>
          document.addEventListener("DOMContentLoaded", function(){
          // make it as accordion for smaller screens
@@ -405,6 +433,7 @@
         $(document).ready(function() {
           $('#header-placeholder').load('header.html');
           $('#footer-placeholder').load('footer.html');
+          $('#review-placeholder').load('review.html');
         });
 
         
