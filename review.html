@@ -1,0 +1,450 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>Bootstrap Example</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+</head>
+
+<body>
+
+  <style>
+    .testimonial1_section {
+      display: block;
+      overflow: hidden;
+    }
+
+    .testimonial1_section:after {
+      display: block;
+      clear: both;
+      content: "";
+    }
+
+    .testimonial1_section .about1_content {
+      background-color: #020d26;
+      padding-top: 77px;
+      padding-right: 210px;
+      padding-bottom: 62px;
+      position: relative;
+    }
+
+    .testimonial1_section .about1_content .background1_layer {
+      background-color: #020d26;
+      width: auto;
+      margin-left: -200px;
+      right: 0;
+      position: absolute;
+      height: 100%;
+      width: 100%;
+      top: 0;
+      left: 0;
+    }
+
+    .testimonial1_section .about1_content .layer1_content {
+      position: relative;
+      z-index: 9;
+      height: 100%;
+    }
+
+    .testimonial1_section .about1_content .layer1_content .section1_title {
+      margin-bottom: 24px;
+      position: relative;
+    }
+
+    .testimonial1_section .about1_content .layer1_content .section1_title:after {
+      display: block;
+      clear: both;
+      content: "";
+    }
+
+    .testimonial1_section .about1_content .layer1_content .section1_title h2 strong {
+      font-weight: 600 !important;
+      width: 100%;
+      display: block;
+    }
+
+    .testimonial1_section .about1_content .layer1_content .section1_title .heading1_line {
+      position: relative;
+    }
+
+    .testimonial1_section .about1_content .layer1_content .section1_title .heading1_line span {
+      transition: all 0.5s ease-in-out 0s;
+      position: relative;
+    }
+
+    .testimonial1_section .about1_content .layer1_content .section1_title .heading1_line span:after {
+      content: "";
+      right: auto;
+      left: 69px;
+      position: absolute;
+      bottom: 28px;
+      width: 17px;
+      margin-left: 0;
+      border-bottom-width: 3px;
+      border-bottom-color: #cacaca;
+      border-bottom-style: solid;
+    }
+
+    .testimonial1_section .about1_content .layer1_content .section1_title .heading1_line:after {
+      content: "";
+      left: 1%;
+      margin-left: 0;
+      position: absolute;
+      bottom: 28px;
+      width: 59px;
+      border-bottom-width: 3px;
+      border-bottom-style: solid;
+      border-bottom-color: #cc4130;
+    }
+
+    .testimonial1_section .about1_content .layer1_content .section1_title p {
+      color: #fff;
+      margin: 0 0 15px;
+    }
+
+    .testimonial1_section .about1_content .layer1_content a {
+      color: #fff;
+      text-transform: capitalize;
+      font-size: 15px;
+      font-weight: 600;
+      text-decoration: none;
+      transition: all 0.3s;
+    }
+
+    .testimonial1_section .about1_content .layer1_content a i {
+      font-size: 18px;
+      vertical-align: middle;
+    }
+
+    .testimonial1_section .about1_content .layer1_content a:hover {
+      color: #cc4130;
+    }
+
+    .testimonial1_section .testimonial1_box {
+      margin-top: 60px !important;
+      position: relative;
+    }
+
+    .testimonial1_section .testimonial1_box .testimonial1_container {
+      background-color: #cc4130;
+      margin-left: -170px !important;
+      position: relative;
+    }
+
+    .testimonial1_section .testimonial1_box .testimonial1_container .background1_layer {
+      background-color: #cc4130;
+      width: auto;
+      margin-right: -200px;
+      right: 0;
+      background-image: url(../images/map.png);
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-position: center;
+      position: absolute;
+      height: 100%;
+      top: 0;
+      left: 0;
+    }
+
+    .testimonial1_section .testimonial1_box .testimonial1_container .layer1_content {
+      position: relative;
+      z-index: 9;
+      height: 100%;
+    }
+
+    .testimonial1_section .testimonial1_box .testimonial1_container .layer1_content .testimonial1_owlCarousel {
+      display: block;
+      position: relative;
+    }
+
+    .testimonial1_section .testimonial1_box .testimonial1_container .layer1_content .testimonial1_owlCarousel .testimonials1 {
+      margin: 10px 0 10px 0;
+      padding: 62px 0px 72px 50px;
+      position: relative;
+      text-align: center;
+    }
+
+    .testimonial1_section .testimonial1_box .testimonial1_container .layer1_content .testimonial1_owlCarousel .testimonials1 .testimonial1_content {
+      box-shadow: 0 0 25px 0 rgba(0, 0, 0, 0.13);
+      margin-left: 150px;
+      margin-top: 69px;
+      padding: 45px 40px 45px 40px;
+      z-index: 1;
+      position: relative;
+      background-color: #fff;
+      transition: all 0.5s ease-in-out 0s;
+    }
+
+    .testimonial1_section .testimonial1_box .testimonial1_container .layer1_content .testimonial1_owlCarousel .testimonials1 .testimonial1_content .testimonial1_caption {
+      margin-bottom: 15px;
+      position: relative;
+    }
+
+    .testimonial1_section .testimonial1_box .testimonial1_container .layer1_content .testimonial1_owlCarousel .testimonials1 .testimonial1_content .testimonial1_caption:after {
+      content: "";
+      width: 30px;
+      display: block;
+      height: 2px;
+      text-align: center;
+      left: 46%;
+      margin-top: 6px;
+      background-color: #cc4130;
+      position: absolute;
+    }
+
+    .testimonial1_section .testimonial1_box .testimonial1_container .layer1_content .testimonial1_owlCarousel .testimonials1 .testimonial1_content .testimonial1_caption h6 {
+      padding-top: 0;
+      margin-bottom: -5px;
+      font-size: 19px;
+      font-weight: 600;
+      line-height: 24px;
+      color: #cc4130;
+    }
+
+    .testimonial1_section .testimonial1_box .testimonial1_container .layer1_content .testimonial1_owlCarousel .testimonials1 .testimonial1_content .testimonial1_caption span {
+      font-size: 12px;
+      color: #9f9f9f;
+      margin: 0;
+    }
+
+    .testimonial1_section .testimonial1_box .testimonial1_container .layer1_content .testimonial1_owlCarousel .testimonials1 .testimonial1_content p {
+      padding: 0;
+      margin: 0;
+      padding-top: 10px;
+      font-size: 16px;
+      line-height: 28px;
+      font-weight: 400;
+      color: #cc4130;
+      font-style: italic;
+    }
+
+    .testimonial1_section .testimonial1_box .testimonial1_container .layer1_content .testimonial1_owlCarousel .testimonials1 .images1_box .testimonial1_img {
+      border: none;
+      position: absolute;
+      top: 0;
+      left: 55px;
+      top: 80px;
+    }
+
+    .testimonial1_section .testimonial1_box .testimonial1_container .layer1_content .testimonial1_owlCarousel .testimonials1 .images1_box .testimonial1_img img {
+      border: 5px solid #fff;
+      box-shadow: 0 0 15px 0 rgba(0, 0, 0, 0.1);
+      width: 35%;
+    }
+
+    .testimonial1_section .testimonial1_box .testimonial1_container .owl-nav .owl-prev {
+      position: absolute;
+      top: 165px;
+      right: 42px;
+      border-radius: 0;
+      background: #cc4130;
+      display: block;
+      outline: 0;
+      width: 34px;
+      line-height: 34px;
+      height: 34px;
+      color: #fff;
+      font-size: 23px;
+      margin-top: -20px;
+      transition: all 0.3s ease-in-out;
+    }
+
+    .testimonial1_section .testimonial1_box .testimonial1_container .owl-nav .owl-prev:hover {
+      background: #020d26;
+    }
+
+    .testimonial1_section .testimonial1_box .testimonial1_container .owl-nav .owl-next {
+      position: absolute;
+      top: 165px;
+      right: 5px;
+      border-radius: 0;
+      display: block;
+      background: #cc4130;
+      outline: 0;
+      width: 34px;
+      text-align: center;
+      line-height: 34px;
+      height: 34px;
+      color: #fff;
+      font-size: 23px;
+      margin-top: -20px;
+      transition: all 0.3s ease-in-out;
+    }
+
+    .testimonial1_section .testimonial1_box .testimonial1_container .owl-nav .owl-next:hover {
+      background: #020d26;
+    }
+
+    @media all and (max-width: 991px) {
+      .testimonial1_section .about1_content {
+        padding-right: 15px !important;
+      }
+
+      .testimonial1_section .about1_content .background1_layer {
+        width: 200% !important;
+      }
+
+      .testimonial1_section .testimonial1_box {
+        margin-top: 0 !important;
+      }
+
+      .testimonial1_section .testimonial1_box .background1_layer {
+        width: 200% !important;
+        margin-left: -200px;
+      }
+
+      .testimonial1_section .testimonial1_box .about1_content {
+        padding-left: 15px !important;
+        padding-right: 15px !important;
+        
+      }
+
+      .testimonial1_section .testimonial1_box .testimonial1_container {
+        margin-left: -15px !important;
+      }
+
+      .testimonial1_section .testimonial1_box .testimonial1_container .testimonials1 {
+        margin: 0px 0 20px 0;
+      }
+
+      .testimonial1_section .testimonial1_box .testimonial1_container .testimonials1 .testimonial1_content {
+        margin-left: -36px !important;
+      }
+
+      .testimonial1_section .testimonial1_box .testimonial1_container .testimonials1 .images1_box {
+        display: none;
+      }
+    }
+  </style>
+  <!-- Google font -->
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Titillium+Web:400,400i,600,600i,700,700i,900">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:400,400i,600,600i,700,700i,800,800i">
+  <!-- carousel -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.css">
+  <section class="testimonial1_section">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-7">
+          <div class="about1_content">
+            <div class="background1_layer"></div>
+            <div class="layer1_content">
+              <div class="section1_title">
+                <h2><strong>Students Testimonial</strong></h2><br><br>
+                <div class="heading1_line"><span></span></div>
+                <h3 style="color: white;">Our students speak for us. </h3>
+              </div>
+              <a href="https://www.google.com/search?q=cryptch+it+solutions&rlz=1C1CHBF_enIN1051IN1051&oq=c&aqs=chrome.0.69i59l2j69i57j69i59j46i131i199i433i465i512j0i131i433i512l4j0i131i433i650.1140046398j0j15&sourceid=chrome&ie=UTF-8#lrd=0x3981ae7baa7fa225:0xe36dc044277db0ca,1,,,,">All Review<i class="icofont-long-arrow-right"></i></a>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-5">
+          <div class="testimonial1_box">
+            <div class="testimonial1_container">
+              <div class="background1_layer"></div>
+              <div class="layer1_content">
+                <div class="testimonial1_owlCarousel owl-carousel">
+                  <div class="testimonials1">
+                    <div class="testimonial1_content">
+                      <div class="testimonial1_caption">
+                        <h6>Rahul Rajak</h6><br>
+                        <span>Avtech Ltd.</span>
+                      </div>
+                      <p>I am very happy with my coach's teaching. He explains concepts in a very simple and easy manner. He also provides good teaching materials that help me understand things better. Overall, I am very satisfied with my Teaching coach Mr. Anand Sharma.</p>
+                    </div>
+                    <div class="images1_box">
+                      <div class="testimonial1_img">
+                        <img class="img-center"
+                          src="images/placement/30.png"
+                          alt="images not found">
+                      </div>
+                    </div>
+                  </div>
+                  <div class="testimonials1">
+                    <div class="testimonial1_content">
+                      <div class="testimonial1_caption">
+                        <h6>Priyanshu Khare</h6><br>
+                        <span>Asian Paints</span>
+                      </div>
+                      <p>Best institute to learn Advance computing, Networking and cloud computing.
+                        Being a not tech guy, I always found it tough to fetch technicalities of computing but this institute has given mesmerizing changes to me.</p>
+                    </div>
+                    <div class="images1_box">
+                      <div class="testimonial1_img">
+                        <img class="img-center"
+                          src="images/placement/31.png"
+                          alt="images not found">
+                      </div>
+                    </div>
+                  </div>
+                  <div class="testimonials1">
+                    <div class="testimonial1_content">
+                      <div class="testimonial1_caption">
+                        <h6>Teewranand Jhariya</h6><br>
+                        <span>Sun Pharma</span>
+                      </div>
+                      <p>The teaching staff is skilled and supportive. A good place to begin with some basic industry-ready knowledge. I will suggest this to whoever in interested in any of the following Hardware & Networking,
+                        .</p>
+                        <a href="https://www.google.com/search?q=cryptch+it+solutions&rlz=1C1CHBF_enIN1051IN1051&oq=c&aqs=chrome.0.69i59l2j69i57j69i59j46i131i199i433i465i512j0i131i433i512l4j0i131i433i650.1140046398j0j15&sourceid=chrome&ie=UTF-8#lrd=0x3981ae7baa7fa225:0xe36dc044277db0ca,1,,,,">Read more<i class="icofont-long-arrow-right"></i></a>
+                    </div>
+                    <div class="images1_box">
+                      <div class="testimonial1_img">
+                        <img class="img-center"
+                          src="images/placement/16.png"
+                          alt="images not found">
+                      </div>
+                    </div>
+                  </div>
+                  <div class="testimonials1">
+                    <div class="testimonial1_content">
+                      <div class="testimonial1_caption">
+                        <h6>Shivam Soni</h6>
+                        <span>SBI Bank</span><br>
+                      </div>
+                      <p>Trainer has absolute command over the subject. I have learn new technology & it is very important for my future life. Cryptch IT Institute is the best for Computer Hardware & Networking course.</p>
+                    </div>
+                    <div class="images1_box">
+                      <div class="testimonial1_img">
+                        <img class="img-center"
+                          src="images/placement/22.png"
+                          alt="images not found">
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <script type="text/javascript"
+    src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.js"></script>
+  <script>$('.testimonial1_owlCarousel').owlCarousel({
+      loop: true,
+      margin: 10,
+      dots: false,
+      nav: true,
+      autoplay: false,
+      smartSpeed: 3000,
+      autoplayTimeout: 4000,
+      responsive: {
+        0: {
+          items: 1
+        },
+        600: {
+          items: 1
+        },
+        1000: {
+          items: 1
+        }
+      }
+    })</script>
+</body>
+
+</html>
