@@ -51,7 +51,9 @@
                                     href="https://www.facebook.com/cryptch.info"><i class="ti-facebook"></i></a></li>
                             <li class="list-inline-item mx-0"><a class="d-inline-block p-2 text-color"
                                     href="https://twitter.com/TchCryp?s=09"><i class="ti-twitter-alt"></i></a></li>
-                            <!-- <li class="list-inline-item mx-0"><a class="d-inline-block p-2 text-color" href="#"><i class="ti-linkedin"></i></a></li> -->
+                            <li class="list-inline-item mx-0"><a class="d-inline-block p-2 text-color"
+                                    href="https://www.linkedin.com/company/cryptch-it-solutions-training-services/"><i
+                                        class="ti-linkedin"></i></a></li>
                             <li class="list-inline-item mx-0"><a class="d-inline-block p-2 text-color"
                                     href="https://instagram.com/cryptch.info?igshid=b6zgr5av958k"><i
                                         class="ti-instagram"></i></a></li>
@@ -82,71 +84,124 @@
                                 <a class="nav-link" href="#">Verify your Certificate</a>
                             </li>
                         </ul>
-
+                    </div>
                 </nav>
-
             </div>
         </div>
     </header>
     <!-- /header -->
     <!-- Modal -->
     <!-- page title -->
-    <section class="page-title-section overlay" data-background="images/backgrounds/page-title.jpg">>
+    <section class="page-title-section overlay" data-background="images/backgrounds/page-title.jpg">
         <div class="container">
             <div class="row">
-                <div class="col-md-8">
+                <div class="col-md-12">
                     <ul class="list-inline custom-breadcrumb">
-                        <li class="list-inline-item"><input type="text" id="search">
-                            <input type="button" value="Search" onclick="searchValue()">
-                        <li class="list-inline-item text-white h3 font-secondary "></li>
-                    </ul>
-
+                        <h1 class="h2 text-primary font-secondary"><b>Enter your Enrollment Number</b></h1><br>
+                        <!-- <input type="text" style="width: 300px;"> -->
+                        <input type="text" class="form-control mb-4" placeholder="Your Enrollment no."
+                            id="enrollmentNumber"><button type="button" value="search" class="btn btn-primary"
+                            onclick="searchStudent()">Search</button>
                 </div>
             </div>
         </div>
+    </section>
+    <!-- /page title -->
+    <!-- contact -->
+    <section class="section bg-gray">
+        <div id="studentDetails"></div>
 
     </section>
+    <!-- /contact -->
 
-    <div id="resultDiv"></div>
-
-
-    <script>
-        let data = [
-            {
-                "name": "CP-ENR-100",
-                "sname": "Tanishka Kohli",
-                "Date": "13/12/2020",
-                "Cname": "CCHNE+",
-                "url": "/CP-ENR-100.pdf"
-            },
-            {
-                "name": "CP-ENR-101",
-                "url": "/CP-ENR-101.pdf"
-            },
-            {
-                "name": "CP-ENR-102",
-                "url": "/CP-ENR-102.pdf"
-            }
-        ];  // json data 
-
-        function searchValue() {
-            let searchField = $('#search').val().trim();
-            let searchResults = data.filter(val => val.name.startsWith(searchField));
-            let resultString = '';
-
-            if (searchResults.length == 1) {
-                searchResults.forEach((item) => {
-                    resultString += `${item.name} - ${item.url}<br>`;
-                });
-            } else {
-                resultString = "No record found";
-            }
-
-            $('#resultDiv').html(resultString);
-        }
-    </script>
     <!-- footer -->
-    <div include-html="footer.html" , id="footer-placeholder"></div>
+    <footer>
+
+        <div class="bg-footer section border-bottom">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-4 col-sm-8 mb-5 mb-lg-0">
+                        <!-- logo -->
+                        <a class="logo-footer" href="https://cryptch.tech/"><img class="img-fluid mb-4"
+                                src="images/logo.png" alt="logo"></a>
+                        <ul class="list-unstyled">
+                            <li class="mb-3"><b>Corporate Office</b><br><br> 2nd Floor Matra Shree Sadan<br>in
+                                Front of Bank of India, Labour Chowk,<br>Yadav Colony, Jabalpur 482002</li>
+                            <li class="mb-3"><b>Registered Office</b><br><br>335, Rudraksh
+                                Park Society <br>Near Rani Durgawati School<br>Ganga Nagar, Jabalpur, Madhya Pradesh
+                                482001
+                            </li>
+
+                        </ul>
+                    </div>
+                    <!-- company -->
+                    <div class="col-lg-4 col-m olc-sm-4 col-6 mb-5 mb-md-0">
+                        <h4 class="text-color mb-5">ABOUT US</h4>
+                        <p> We are an educational institute, which aims to provide quality education to all.<br>
+                            We also provide professional service, AMC's and much more.
+                        </p>
+                        <ul class="list-unstyled">
+                            <li class="mb-2">+91 91710 30453</li>
+                            <li class="mb-2">+91 94243 27922</li>
+                            <li class="mb-2">cryptch.info@gmail.com</li>
+
+                        </ul>
+                    </div>
+                    <!-- links -->
+                    <!-- support -->
+                    <div class="col-lg-2 col-md-3 col-sm-4 col-6 mb-5 mb-md-0">
+                        <h4 class="text-color mb-5">LINKS</h4>
+                        <ul class="list-unstyled">
+                            <li class="mb-3"><a class="text-color" href="about.html">About Us</a></li>
+                            <li class="mb-3"><a class="text-color" href="contact.html">Contact</a></li>
+                            <li class="mb-3"><a class="text-color" href="courses.html">Courses</a></li>
+                        </ul>
+                    </div>
+                    <!-- support -->
+                    <div class="col-lg-2 col-md-3 col-sm-4 col-6 mb-5 mb-md-0">
+                        <h4 class="text-color mb-5">SUPPORT</h4>
+                        <ul class="list-unstyled">
+                            <li class="mb-3"><a class="text-color" href="contact.html">FAQS</a></li>
+                            <li class="mb-3"><a class="text-color" href="contact.html">Contact</a></li>
+                            <!-- <li class="mb-3"><a class="text-color" href="#">Testimonials</a></li> -->
+                            <li class="mb-3"><a class="text-color" href="about.html">Services</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- copyright -->
+        <div class="copyright py-4 bg-footer">
+            <div class="container">
+                <div class="row">
+                    <div class="col-sm-7 text-sm-left text-center">
+                        <p class="mb-0">
+                            Copyright
+                            <script>
+                                var CurrentYear = new Date().getFullYear()
+                                document.write(CurrentYear)
+                            </script>
+                            © themefisher © cryptch
+                        </p>
+                    </div>
+                    <div class="col-sm-5 text-sm-right text-center">
+                        <ul class="list-inline">
+                            <li class="list-inline-item mx-0"><a class="d-inline-block p-2 text-color"
+                                    href="https://www.facebook.com/cryptch.info"><i class="ti-facebook"></i></a></li>
+                            <li class="list-inline-item mx-0"><a class="d-inline-block p-2 text-color"
+                                    href="https://twitter.com/TchCryp?s=09"><i class="ti-twitter-alt"></i></a></li>
+                            <li class="list-inline-item mx-0"><a class="d-inline-block p-2 text-color"
+                                    href="https://www.linkedin.com/company/cryptch-it-solutions-training-services/"><i
+                                        class="ti-linkedin"></i></a></li>
+                            <li class="list-inline-item mx-0"><a class="d-inline-block p-2 text-color"
+                                    href="https://instagram.com/cryptch.info?igshid=b6zgr5av958k"><i
+                                        class="ti-instagram"></i></a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
     <!-- /footer -->
     <!-- jQuery -->
     <script src="plugins/jQuery/jquery.min.js"></script>
@@ -165,11 +220,82 @@
     <script src="plugins/google-map/gmap.js"></script>
     <!-- Main Script -->
     <script src="js/script.js"></script>
-
     <script>
-        $(document).ready(function () {
-            $('#footer-placeholder').load('footer.html');
+        document.addEventListener("DOMContentLoaded", function () {
+            // make it as accordion for smaller screens
+            if (window.innerWidth < 992) {
+
+                // close all inner dropdowns when parent is closed
+                document.querySelectorAll('.navbar .dropdown').forEach(function (everydropdown) {
+                    everydropdown.addEventListener('hidden.bs.dropdown', function () {
+                        // after dropdown is hidden, then find all submenus
+                        this.querySelectorAll('.submenu').forEach(function (everysubmenu) {
+                            // hide every submenu as well
+                            everysubmenu.style.display = 'none';
+                        });
+                    })
+                });
+
+                document.querySelectorAll('.dropdown-menu a').forEach(function (element) {
+                    element.addEventListener('click', function (e) {
+                        let nextEl = this.nextElementSibling;
+                        if (nextEl && nextEl.classList.contains('submenu')) {
+                            // prevent opening link if link needs to open dropdown
+                            e.preventDefault();
+                            if (nextEl.style.display == 'block') {
+                                nextEl.style.display = 'none';
+                            } else {
+                                nextEl.style.display = 'block';
+                            }
+
+                        }
+                    });
+                })
+            }
+            // end if innerWidth
         });
+         // DOMContentLoaded  end
+    </script>
+    <script>
+        function searchStudent() {
+            const enrollmentNumber = document.getElementById('enrollmentNumber').value;
+
+            fetch('studentData.json')
+                .then(response => response.json())
+                .then(data => {
+                    const student = data.find(s => s.enr === enrollmentNumber);
+                    if (student) {
+                        const studentDetails = document.getElementById('studentDetails');
+                        studentDetails.innerHTML = `
+                <section class="section bg-gray">
+             <div class="container">
+                <div class="row ">
+                   <div class="col-lg-6 mb-4 mb-lg-0 center">
+                    <h3>This verifies that</h3>
+                    <h2> ${student.name} has completed  the courses -<br>${student.Cname}</h2><br>
+                
+                      <a href=https://cryptch.tech/verify/${student.enr}.pdf target="_blank">Click here to download</a><br>
+                   <br>
+                </div>
+                <div class = "col-lg-6">
+                    <object class="cer" data=" ${student.enr}.pdf" width="600" height="520" style="border:0;" allowfullscreen="" loading="lazy"></object>
+                   </div>
+                </div>
+             </div>
+          </section>
+    
+            <!--   <p>Name: ${student.name}</p>
+                  <p>Age: ${student.age}</p>
+                   Add more details as needed -->
+                `;
+                    } else {
+                        alert('Student not found');
+                    }
+                })
+                .catch(error => {
+                    console.error('Error:', error);
+                });
+        }
     </script>
 </body>
 
