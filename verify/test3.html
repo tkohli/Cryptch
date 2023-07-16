@@ -52,8 +52,7 @@
                             <li class="list-inline-item mx-0"><a class="d-inline-block p-2 text-color"
                                     href="https://twitter.com/TchCryp?s=09"><i class="ti-twitter-alt"></i></a></li>
                             <li class="list-inline-item mx-0"><a class="d-inline-block p-2 text-color"
-                                    href="https://www.linkedin.com/company/cryptch-it-solutions-training-services/"><i
-                                        class="ti-linkedin"></i></a></li>
+                                 href="https://www.linkedin.com/company/cryptch-it-solutions-training-services/"><i class="ti-linkedin"></i></a></li>
                             <li class="list-inline-item mx-0"><a class="d-inline-block p-2 text-color"
                                     href="https://instagram.com/cryptch.info?igshid=b6zgr5av958k"><i
                                         class="ti-instagram"></i></a></li>
@@ -91,32 +90,30 @@
     </header>
     <!-- /header -->
     <!-- Modal -->
-    <!-- page title -->
+    <!-- page title -->       
     <section class="page-title-section overlay" data-background="images/backgrounds/page-title.jpg">
         <div class="container">
-            <div class="row">
-                <div class="col-md-12">
-                    <ul class="list-inline custom-breadcrumb">
-                        <h1 class="h2 text-primary font-secondary"><b>Enter your Enrollment Number</b></h1><br>
-                        <!-- <input type="text" style="width: 300px;"> -->
-                        <input type="text" class="form-control mb-4" placeholder="Your Enrollment no."
-                            id="enrollmentNumber"><button type="button" value="search" class="btn btn-primary"
-                            onclick="searchStudent()">Search</button>
-                </div>
-            </div>
+           <div class="row">
+              <div class="col-md-12">
+                 <ul class="list-inline custom-breadcrumb">
+                    <h1 class="h2 text-primary font-secondary"><b>Enter your Enrollment Number</b></h1><br>
+                    <!-- <input type="text" style="width: 300px;"> -->
+                    <input type="text" class="form-control mb-4" placeholder="Your Enrollment no." id="enrollmentNumber"><button type="button" value="search" class="btn btn-primary" onclick="searchStudent()">Search</button>
+              </div>
+           </div>
         </div>
-    </section>
+     </section>
     <!-- /page title -->
     <!-- contact -->
     <section class="section bg-gray">
         <div id="studentDetails"></div>
-
+        
     </section>
     <!-- /contact -->
-
+    
     <!-- footer -->
     <footer>
-
+        
         <div class="bg-footer section border-bottom">
             <div class="container">
                 <div class="row">
@@ -144,7 +141,7 @@
                             <li class="mb-2">+91 91710 30453</li>
                             <li class="mb-2">+91 94243 27922</li>
                             <li class="mb-2">cryptch.info@gmail.com</li>
-
+                            
                         </ul>
                     </div>
                     <!-- links -->
@@ -190,9 +187,7 @@
                                     href="https://www.facebook.com/cryptch.info"><i class="ti-facebook"></i></a></li>
                             <li class="list-inline-item mx-0"><a class="d-inline-block p-2 text-color"
                                     href="https://twitter.com/TchCryp?s=09"><i class="ti-twitter-alt"></i></a></li>
-                            <li class="list-inline-item mx-0"><a class="d-inline-block p-2 text-color"
-                                    href="https://www.linkedin.com/company/cryptch-it-solutions-training-services/"><i
-                                        class="ti-linkedin"></i></a></li>
+                            <li class="list-inline-item mx-0"><a class="d-inline-block p-2 text-color" href="https://www.linkedin.com/company/cryptch-it-solutions-training-services/"><i class="ti-linkedin"></i></a></li>
                             <li class="list-inline-item mx-0"><a class="d-inline-block p-2 text-color"
                                     href="https://instagram.com/cryptch.info?igshid=b6zgr5av958k"><i
                                         class="ti-instagram"></i></a></li>
@@ -258,15 +253,15 @@
     </script>
     <script>
         function searchStudent() {
-            const enrollmentNumber = document.getElementById('enrollmentNumber').value;
-
-            fetch('studentData.json')
-                .then(response => response.json())
-                .then(data => {
-                    const student = data.find(s => s.enr === enrollmentNumber);
-                    if (student) {
-                        const studentDetails = document.getElementById('studentDetails');
-                        studentDetails.innerHTML = `
+          const enrollmentNumber = document.getElementById('enrollmentNumber').value;
+          
+          fetch('studentData.json')
+            .then(response => response.json())
+            .then(data => {
+              const student = data.find(s => s.enr === enrollmentNumber);
+              if (student) {
+                const studentDetails = document.getElementById('studentDetails');
+                studentDetails.innerHTML = `
                 <section class="section bg-gray">
              <div class="container">
                 <div class="row ">
@@ -288,15 +283,15 @@
                   <p>Age: ${student.age}</p>
                    Add more details as needed -->
                 `;
-                    } else {
-                        alert('Student not found');
-                    }
-                })
-                .catch(error => {
-                    console.error('Error:', error);
-                });
+              } else {
+                alert('Student not found');
+              }
+            })
+            .catch(error => {
+              console.error('Error:', error);
+            });
         }
-    </script>
+      </script>
 </body>
 
 </html>
