@@ -478,5 +478,90 @@
         "enr": "CP-INT-123",
         "name": "DATA FORENSICS",
         "Cname": "Internship - DATA FORENSICS"
+    },
+    {
+        "enr": "CP-ENR-194",
+        "name": "Raghvendra Gupta",
+        "Cname": "Cryptch Certified Hardware & Network Engineer +"
+    },
+    {
+        "enr": "CP-ENR-239",
+        "name": "Dhananjay Kumar Pandey",
+        "Cname": "Cryptch Certified Hardware & Network Engineer +"
+    },
+    {
+        "enr": "CP-ENR-139",
+        "name": "Mithun",
+        "Cname": "Cryptch Certified Hardware & Network Engineer +"
+    },
+    {
+        "enr": "CP-ENR-140",
+        "name": "Avinash Jangde",
+        "Cname": "Cryptch Certified Hardware & Network Engineer +"
+    },
+    {
+        "enr": "CP-ENR-161",
+        "name": "Ankit Soni",
+        "Cname": "Cryptch Certified Hardware & Network Engineer +"
+    },
+    {
+        "enr": "CP-ENR-165",
+        "name": "Preetam Vishwakarma",
+        "Cname": "Cryptch Certified Hardware & Network Engineer +"
+    },
+    {
+        "enr": "CP-ENR-176",
+        "name": "Varul Raut",
+        "Cname": "Cryptch Certified Hardware & Network Engineer +"
+    },
+    {
+        "enr": "CP-ENR-211",
+        "name": "Sunny Raj Choudhary",
+        "Cname": "Cryptch Certified Hardware & Network Engineer"
+    },
+    {
+        "enr": "CP-ENR-215",
+        "name": "Sachin Vishwakarma",
+        "Cname": "Cryptch Certified Hardware & Network Engineer +"
+    },
+    {
+        "enr": "CP-ENR-247",
+        "name": "Sidhharth Pol",
+        "Cname": "Cryptch Certified Hardware & Network Engineer"
+    },
+    {
+        "enr": "CP-ENR-268",
+        "name": "Amir Ansari",
+        "Cname": "Hardware, OS, N+"
+    },
+    {
+        "enr": "CP-ENR-251",
+        "name": "Ravi Prakash Dwivedi",
+        "Cname": "N+, CCNA, AWS"
+    },
+    {
+        "enr": "CP-ENR-224",
+        "name": "Rahul Rajak",
+        "Cname": "Cryptch Certified Hardware & Network Engineer"
+    },
+    {
+        "enr": "CP-ENR-240",
+        "name": "Raja Rajak",
+        "Cname": "Cryptch Certified Hardware & Network Engineer +"
+    },
+    {
+        "enr": "CP-ENR-246",
+        "name": "Surya Pratap Dubey",
+        "Cname": "N+, CCNA"
+    },
+    {
+        "enr": "CP-ENR-227",
+        "name": "Anuj Kumar Shrivas",
+        "Cname": "Cryptch Certified Hardware & Network Engineer +"
+    },
+    {
+        "enr": "CP-ENR-203",
+        "name": "Koshik Dev Kori",
+        "Cname": "H/W, OS"
     }
 ]
