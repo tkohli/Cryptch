@@ -470,16 +470,6 @@
         "Cname": "Cryptch Certified AWS Cloud Solutions Architect"
     },
     {
-        "enr": "CP-INT-122",
-        "name": "Miss Sanskriti Shrivastava",
-        "Cname": "Internship - Programming language C++"
-    },
-    {
-        "enr": "CP-INT-123",
-        "name": "DATA FORENSICS",
-        "Cname": "Internship - DATA FORENSICS"
-    },
-    {
         "enr": "CP-ENR-194",
         "name": "Raghvendra Gupta",
         "Cname": "Cryptch Certified Hardware & Network Engineer +"
@@ -560,8 +550,113 @@
         "Cname": "Cryptch Certified Hardware & Network Engineer +"
     },
     {
+        "enr": "CP-ENR-289",
+        "name": "Akshansh Rajoriya",
+        "Cname": "Introduction to programming using C & C++,Advance Python Programming & Data Structures"
+    },
+    {
+        "enr": "CP-ENR-290",
+        "name": "Sunanda Burman",
+        "Cname": "Introduction to programming using C & C++,Advance Python Programming & Data Structures"
+    },
+    {
+        "enr": "CP-ENR-291",
+        "name": "Rinki Thakur",
+        "Cname": "Introduction to programming using C & C++,Advance Python Programming & Data Structures"
+    },
+    {
+        "enr": "CP-ENR-321",
+        "name": "Harshit Sharma",
+        "Cname": "Cryptch Certified Microsoft Solutions Associate"
+    },
+    {
+        "enr": "CP-ENR-279",
+        "name": "Shivam Mishra",
+        "Cname": "Cryptch Certified Microsoft Solutions Associate"
+    },
+    {
+        "enr": "CP-ENR-313",
+        "name": "Nitesh Saini",
+        "Cname": "Cryptch Certified Microsoft Solutions Associate"
+    },
+    {
+        "enr": "CP-ENR-312",
+        "name": "Abhishek Sharma",
+        "Cname": "Cryptch Certified Microsoft Solutions Associate"
+    },
+    {
+        "enr": "CP-ENR-164",
+        "name": "Manoj Kumar",
+        "Cname": "Cryptch Certified Hardware & Network Engineer +"
+    },
+    {
+        "enr": "CP-ENR-176",
+        "name": "Varul Raut",
+        "Cname": "Cryptch Certified Hardware & Network Engineer +"
+    },
+    {
         "enr": "CP-ENR-203",
         "name": "Koshik Dev Kori",
-        "Cname": "H/W, OS"
+        "Cname": "Cryptch Certified Hardware & Network Engineer +"
+    },
+    {
+        "enr": "CP-ENR-201",
+        "name": "Iknoor Kaur Saluja",
+        "Cname": "Cryptch Certified Hardware & Network Engineer +"
+    },
+    {
+        "enr": "CP-ENR-237",
+        "name": "Yash Tiwari",
+        "Cname": "Cryptch Certified Hardware & Network Engineer"
+    },
+    {
+        "enr": "CP-ENR-238",
+        "name": "Ayush Bajpai",
+        "Cname": "Cryptch Certified Hardware & Network Engineer"
+    },
+    {
+        "enr": "CP-ENR-316",
+        "name": "Mohit Upadhyay",
+        "Cname": "Cryptch Certified AWS Cloud Practitioner"
+    },
+    {
+        "enr": "CP-ENR-330",
+        "name": "Shraddha Soni",
+        "Cname": "Cryptch Certified AWS Cloud Practitioner"
+    },
+    {
+        "enr": "CP-ENR-355",
+        "name": "Anjana Kushwaha",
+        "Cname": "Cryptch Certified AWS Cloud Practitioner"
+    },
+    {
+        "enr": "CP-ENR-250",
+        "name": "Adarsh Kumar Mishra",
+        "Cname": "Cryptch Certified Hardware & Network Engineer +"
+    },
+    {
+        "enr": "CP-ENR-231",
+        "name": "Chaitanya Jhariya",
+        "Cname": "Cryptch Certified Hardware & Network Engineer +"
+    },
+    {
+        "enr": "CP-ENR-136",
+        "name": "Arvinder Singh Dhoul",
+        "Cname": "Cryptch Certified Hardware & Network Engineer"
+    },
+    {
+        "enr": "CP-ENR-245",
+        "name": "Anuj Tiwari",
+        "Cname": "Cryptch Certified Hardware & Network Engineer +"
+    },
+    {
+        "enr": "CP-INT-122",
+        "name": "Miss Sanskriti Shrivastava",
+        "Cname": "Internship - Programming language C++"
+    },
+    {
+        "enr": "CP-INT-123",
+        "name": "DATA FORENSICS",
+        "Cname": "Internship - DATA FORENSICS"
     }
 ]
