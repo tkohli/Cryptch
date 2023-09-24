@@ -402,7 +402,7 @@
     {
         "enr": "CP-ENR-232",
         "name": "Om Singh",
-        "Cname": "Linux & Windows Server Configuration, Cryptch Certified AWS Cloud Solutions Architect"
+        "Cname": "Linux & Windows Server Configuration, Cryptch Certified AWS Cloud Solutions Architect,Cryptch Certified Microsoft Solutions Associate"
     },
     {
         "enr": "CP-ENR-233",
@@ -648,6 +648,31 @@
         "enr": "CP-ENR-245",
         "name": "Anuj Tiwari",
         "Cname": "Cryptch Certified Hardware & Network Engineer +"
+    },
+    {
+        "enr": "CP-ENR-336",
+        "name": "Ratan Yadav",
+        "Cname": "Cryptch Certified AWS Cloud Solutions Architect"
+    },
+    {
+        "enr": "CP-ENR-337",
+        "name": "Adarsh Tiwari",
+        "Cname": "Cryptch Certified AWS Cloud Solutions Architect"
+    },
+    {
+        "enr": "CP-ENR-340",
+        "name": "KU ANKITA GOKHALE",
+        "Cname": "Cryptch Certified AWS Cloud Solutions Architect"
+    },
+    {
+        "enr": "CP-ENR-341",
+        "name": "Ayushi Jain",
+        "Cname": "Cryptch Certified AWS Cloud Solutions Architect"
+    },
+    {
+        "enr": "CP-ENR-353",
+        "name": "Divyanshi Chouksey",
+        "Cname": "Cryptch Certified AWS Cloud Solutions Architect"
     },
     {
         "enr": "CP-INT-122",
