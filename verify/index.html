@@ -267,9 +267,10 @@
                 .then(response => response.json())
                 .then(data => {
                     const student = data.find(s => s.enr === enrollmentNumber);
-                    if (student) {
-                        const studentDetails = document.getElementById('studentDetails');
-                        studentDetails.innerHTML = `
+                    document.addEventListener('DOMContentLoaded', function () {
+                        if (student) {
+                            const studentDetails = document.getElementById('studentDetails');
+                            studentDetails.innerHTML = `
                 <section class="section bg-gray">
              <div class="container">
                 <div class="row ">
@@ -291,9 +292,10 @@
                   <p>Age: ${student.age}</p>
                    Add more details as needed -->
                 `;
-                    } else {
-                        alert('Student not found');
-                    }
+                        } else {
+                            alert('Student not found');
+                        }
+                    });
                 })
                 .catch(error => {
                     console.error('Error:', error);
