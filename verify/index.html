@@ -110,7 +110,7 @@
     <!-- contact -->
     <section class="section bg-gray" style="
     padding-top: 0px;
-    padding-bottom: 0px; >
+    padding-bottom: 0px;">
         <div id=" studentDetails">
         </div>
 
@@ -260,19 +260,16 @@
         // DOMContentLoaded  end
     </script>
     <script>
-        document.addEventListener('DOMContentLoaded', function () {
-            const studentDetails = document.getElementById('studentDetails');
-            console.log(studentDetails); // Check if it logs the correct element
-            function searchStudent() {
-                const enrollmentNumber = document.getElementById('enrollmentNumber').value;
+        function searchStudent() {
+            const enrollmentNumber = document.getElementById('enrollmentNumber').value;
 
-                fetch('studentData.json')
-                    .then(response => response.json())
-                    .then(data => {
-                        const student = data.find(s => s.enr === enrollmentNumber);
-                        if (student) {
-                            const studentDetails = document.getElementById('studentDetails');
-                            studentDetails.innerHTML = `
+            fetch('studentData.json')
+                .then(response => response.json())
+                .then(data => {
+                    const student = data.find(s => s.enr === enrollmentNumber);
+                    if (student) {
+                        const studentDetails = document.getElementById('studentDetails');
+                        studentDetails.innerHTML = `
                 <section class="section bg-gray">
              <div class="container">
                 <div class="row ">
@@ -294,17 +291,14 @@
                   <p>Age: ${student.age}</p>
                    Add more details as needed -->
                 `;
-                        } else {
-                            alert('Student not found');
-                        }
-                    })
-                    .catch(error => {
-                        console.error('Error:', error);
-                    });
-            }
-            // Your existing script
-        });
-
+                    } else {
+                        alert('Student not found');
+                    }
+                })
+                .catch(error => {
+                    console.error('Error:', error);
+                });
+        }
     </script>
 </body>
 
