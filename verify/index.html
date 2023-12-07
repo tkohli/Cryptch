@@ -111,9 +111,9 @@
     <section class="section bg-gray" style="
     padding-top: 0px;
     padding-bottom: 0px;">
-        <div id=" studentDetails">
-            Note: If you are unable to search for your Certificate, Please use URL - cryptch.tech/verify/<ENR-number>.pdf<br>
-                Replace ENR-number with your ENR number
+        <div id=" studentDetails" >
+            <div>Note: If you are unable to search for your Certificate, Please use URL - cryptch.tech/verify/ENR-number.pdf<br>
+                Replace ENR-number with your ENR number </div>
         </div>
 
     </section>
@@ -263,44 +263,42 @@
     </script>
     <script>
         function searchStudent() {
-            const enrollmentNumber = document.getElementById('enrollmentNumber').value;
-            console.log(enrollmentNumber)
+    const enrollmentNumber = document.getElementById('enrollmentNumber').value;
 
-            fetch('studentData.json').then(response => response.json()).then(data => {
-                const student = data.find(s => s.enr === enrollmentNumber);
+    fetch('studentData.json')
+        .then(response => response.json())
+        .then(data => {
+            const student = data.find(s => s.enr === enrollmentNumber);
 
-                if (student) {
-                    const studentDetails = document.getElementById('studentDetails');
-                    studentDetails.innerHTML = `
-                <section class="section bg-gray">
-             <div class="container">
-                <div class="row ">
-                   <div class="col-lg-6 mb-4 mb-lg-0 center">
-                    <h3>This verifies that</h3>
-                    <h2> ${student.name} has completed  the courses -<br>${student.Cname}</h2><br>
-                
-                      <a href=https://cryptch.tech/verify/${student.enr}.pdf target="_blank">Click here to download</a><br>
-                   <br>
-                </div>
-                <div class = "col-lg-6">
-                    <object class="cer" data=" ${student.enr}.pdf" width="600" height="520" style="border:0;" allowfullscreen="" loading="lazy"></object>
-                   </div>
-                </div>
-             </div>
-          </section>
-    
-            <!--   <p>Name: ${student.name}</p>
-                  <p>Age: ${student.age}</p>
-                   Add more details as needed -->
+            if (student) {
+                const studentDetails = document.getElementById('studentDetails');
+                studentDetails.innerHTML = `
+                    <section class="section bg-gray">
+                        <div class="container">
+                            <div class="row ">
+                                <div class="col-lg-6 mb-4 mb-lg-0 center">
+                                    <h3>This verifies that</h3>
+                                    <h2>${student.name} has completed the courses -<br>${student.Cname}</h2><br>
+                                    <a href="https://cryptch.tech/verify/${student.enr}.pdf" target="_blank">Click here to download</a><br>
+                                    <br>
+                                </div>
+                                <div class="col-lg-6">
+                                    <object class="cer" data="${student.enr}.pdf" width="600" height="520" style="border:0;" allowfullscreen="" loading="lazy"></object>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
                 `;
-                } else {
-                    alert('Student not found');
-                }
-            })
-                .catch(error => {
-                    console.error('Error:', error);
-                });
-        }
+            } else {
+                alert('Student not found');
+            }
+        })
+        .catch(error => {
+            console.error('Error:', error);
+            alert('An error occurred while fetching student data.');
+        });
+}
+
     </script>
 </body>
 
