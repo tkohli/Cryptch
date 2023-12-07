@@ -276,51 +276,52 @@
     }
 }
 
-function searchStudent() {
-    const enrollmentNumber = document.getElementById('enrollmentNumber').value;
-    console.log('Enrollment Number:', enrollmentNumber);
+document.addEventListener('DOMContentLoaded', function () {
+    function searchStudent() {
+        const enrollmentNumber = document.getElementById('enrollmentNumber').value;
 
-    fetch('studentData.json')
-        .then(response => response.json())
-        .then(data => {
-            console.log('Fetched Data:', data);
-
-            const student = data.find(s => s.enr === enrollmentNumber);
-            console.log('Found Student:', student);
-
-            if (student) {
-                 console.log('Fetched Data:', data);
+        fetch('studentData.json')
+            .then(response => response.json())
+            .then(data => {
+                const student = data.find(s => s.enr === enrollmentNumber);
                 const studentDetails = document.getElementById('studentDetails');
-                console.log('Found Student:', student);
-                console.log('Student Details Element:', studentDetails);
-                studentDetails.innerHTML = `
-                    <section class="section bg-gray">
-                        <div class="container">
-                            <div class="row ">
-                                <div class="col-lg-6 mb-4 mb-lg-0 center">
-                                    <h3>This verifies that</h3>
-                                    <h2>${student.name} has completed the courses -<br>${student.Cname}</h2><br>
-                                    <a href="https://cryptch.tech/verify/${student.enr}.pdf" target="_blank">Click here to download</a><br>
-                                    <br>
+
+                if (studentDetails) {
+                    if (student) {
+                        studentDetails.innerHTML = `
+                            <section class="section bg-gray">
+                                <div class="container">
+                                    <div class="row">
+                                        <div class="col-lg-6 mb-4 mb-lg-0 center">
+                                            <h3>This verifies that</h3>
+                                            <h2>${student.name} has completed the courses -<br>${student.Cname}</h2><br>
+                                            <a href="https://cryptch.tech/verify/${student.enr}.pdf" target="_blank">Click here to download</a><br>
+                                            <br>
+                                        </div>
+                                        <div class="col-lg-6">
+                                            <object class="cer" data="${student.enr}.pdf" width="600" height="520" style="border:0;" allowfullscreen="" loading="lazy"></object>
+                                        </div>
+                                    </div>
                                 </div>
-                                <div class="col-lg-6">
-                                    <object class="cer" data="${student.enr}.pdf" width="600" height="520" style="border:0;" allowfullscreen="" loading="lazy"></object>
-                                </div>
-                            </div>
-                        </div>
-                    </section>
-                `;
-            } else {
-                alert('Student not found');
-                console.log('Error:', error);
-            }
-        })
-        .catch(error => {
-            console.error('Error:', error);
-            console.log('Error:', error);
-            alert('An error occurred while fetching student data.');
-        });
-}
+                            </section>
+                        `;
+                    } else {
+                        alert('Student not found');
+                    }
+                } else {
+                    console.error('Element with ID "studentDetails" not found.');
+                }
+            })
+            .catch(error => {
+                console.error('Error:', error);
+                alert('An error occurred while fetching student data.');
+            });
+    }
+
+    // Call the function when the button is clicked
+    document.getElementById('searchButton').addEventListener('click', searchStudent);
+});
+
 
     </script>
 </body>
