@@ -112,7 +112,7 @@
     padding-top: 0px;
     padding-bottom: 0px;">
         <div id=" studentDetails" >
-            <div>Note: If you are unable to search for your Certificate, Please use URL - cryptch.tech/verify/ENR-number.pdf<br>
+            <div class="container center">Note: If you are unable to search for your Certificate, Please use URL - cryptch.tech/verify/ENR-number.pdf<br>
                 Replace ENR-number with your ENR number </div>
         </div>
 
@@ -262,14 +262,23 @@
         // DOMContentLoaded  end
     </script>
     <script>
-        function searchStudent() {
+        async function fetchStudentData(enrollmentNumber) {
+    try {
+        const response = await fetch('studentData.json');
+        const data = await response.json();
+        const student = data.find(s => s.enr === enrollmentNumber);
+        return student;
+    } catch (error) {
+        console.error('Error fetching student data:', error);
+        throw error; // Re-throw the error for further handling
+    }
+}
+
+function searchStudent() {
     const enrollmentNumber = document.getElementById('enrollmentNumber').value;
 
-    fetch('studentData.json')
-        .then(response => response.json())
-        .then(data => {
-            const student = data.find(s => s.enr === enrollmentNumber);
-
+    fetchStudentData(enrollmentNumber)
+        .then(student => {
             if (student) {
                 const studentDetails = document.getElementById('studentDetails');
                 studentDetails.innerHTML = `
@@ -294,7 +303,6 @@
             }
         })
         .catch(error => {
-            console.error('Error:', error);
             alert('An error occurred while fetching student data.');
         });
 }
