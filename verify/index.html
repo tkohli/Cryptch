@@ -277,11 +277,15 @@
 
 function searchStudent() {
     const enrollmentNumber = document.getElementById('enrollmentNumber').value;
+    console.log('Enrollment Number:', enrollmentNumber);
 
     fetchStudentData(enrollmentNumber)
         .then(student => {
             if (student) {
+                 console.log('Fetched Data:', data);
                 const studentDetails = document.getElementById('studentDetails');
+                console.log('Found Student:', student);
+                console.log('Student Details Element:', studentDetails);
                 studentDetails.innerHTML = `
                     <section class="section bg-gray">
                         <div class="container">
@@ -301,9 +305,12 @@ function searchStudent() {
                 `;
             } else {
                 alert('Student not found');
+                console.log('Error:', error);
             }
         })
         .catch(error => {
+            console.error('Error:', error);
+            console.log('Error:', error);
             alert('An error occurred while fetching student data.');
         });
 }
