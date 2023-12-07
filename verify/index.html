@@ -318,10 +318,14 @@ document.addEventListener('DOMContentLoaded', function () {
             });
     }
 
-    // Call the function when the button is clicked
-    document.getElementById('searchButton').addEventListener('click', searchStudent);
+    // Check if the button element exists before adding an event listener
+    const searchButton = document.getElementById('searchButton');
+    if (searchButton) {
+        searchButton.addEventListener('click', searchStudent);
+    } else {
+        console.error('Element with ID "searchButton" not found.');
+    }
 });
-
 
     </script>
 </body>
