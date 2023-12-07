@@ -264,7 +264,8 @@
     <script>
         async function fetchStudentData(enrollmentNumber) {
     try {
-        const response = await fetch('studentData.json');
+        
+        const response = await fetch('https://cryptch.tech/verify/studentData.json');
         const data = await response.json();
         const student = data.find(s => s.enr === enrollmentNumber);
         return student;
