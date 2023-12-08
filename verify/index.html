@@ -92,20 +92,76 @@
     <!-- /header -->
     <!-- Modal -->
     <!-- page title -->
-    <section class="page-title-section overlay" data-background="images/backgrounds/page-title.jpg">
+    <!-- Add this div to your HTML structure -->
+<div id="studentDetails"></div>
+
+<section class="page-title-section overlay" data-background="images/backgrounds/page-title.jpg">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <ul class="list-inline custom-breadcrumb">
+                    <h1 class="h2 text-primary font-secondary"><b>Enter your Enrollment Number</b></h1><br>
+                    <input type="text" class="form-control mb-4" placeholder="Your Enrollment no." id="enrollmentNumber">
+                    <button type="button" value="search" class="btn btn-primary" id="searchButton" onclick="searchStudent()">Search</button>
+                </ul>
+            </div>
+        </div>
+    </div>
+</section>
+
+<script>
+    document.addEventListener('DOMContentLoaded', function () {
+        function searchStudent() {
+            const enrollmentNumber = document.getElementById('enrollmentNumber').value;
+
+            fetch('studentData.json')
+                .then(response => response.json())
+                .then(data => {
+                    const student = data.find(s => s.enr === enrollmentNumber);
+                    const studentDetails = document.getElementById('studentDetails');
+
+                    if (studentDetails) {
+                        if (student) {
+                            studentDetails.innerHTML = `
+                                <!-- Rest of your code here -->
+                            `;
+                        } else {
+                            alert('Student not found');
+                        }
+                    } else {
+                        console.error('Element with ID "studentDetails" not found.');
+                    }
+                })
+                .catch(error => {
+                    console.error('Error:', error);
+                    alert('An error occurred while fetching student data.');
+                });
+        }
+
+        // Add the event listener after the function is defined
+        const searchButton = document.getElementById('searchButton');
+        if (searchButton) {
+            searchButton.addEventListener('click', searchStudent);
+        } else {
+            console.error('Element with ID "searchButton" not found.');
+        }
+    });
+</script>
+
+<!--     <section class="page-title-section overlay" data-background="images/backgrounds/page-title.jpg">
         <div class="container">
             <div class="row">
                 <div class="col-md-12">
                     <ul class="list-inline custom-breadcrumb">
                         <h1 class="h2 text-primary font-secondary"><b>Enter your Enrollment Number</b></h1><br>
-                        <!-- <input type="text" style="width: 300px;"> -->
+                        <!-- <input type="text" style="width: 300px;"> --
                         <input type="text" class="form-control mb-4" placeholder="Your Enrollment no."
                             id="enrollmentNumber"><button type="button" value="search" class="btn btn-primary" id="searchButton"
                             onclick="searchStudent()">Search</button>
                 </div>
             </div>
         </div>
-    </section>
+    </section> -->
     <!-- /page title -->
     <!-- contact -->
     <section class="section bg-gray" style="
@@ -261,58 +317,7 @@
         });
         // DOMContentLoaded  end
     </script>
-    <script>
-        document.addEventListener('DOMContentLoaded', function () {
-            function searchStudent() {
-                const enrollmentNumber = document.getElementById('enrollmentNumber').value;
-
-                fetch('studentData.json')
-                    .then(response => response.json())
-                    .then(data => {
-                        const student = data.find(s => s.enr === enrollmentNumber);
-                        const studentDetails = document.getElementById('studentDetails');
-
-                        if (studentDetails) {
-                            if (student) {
-                                studentDetails.innerHTML = `
-                                    <section class="section bg-gray">
-                                        <div class="container">
-                                            <div class="row">
-                                                <div class="col-lg-6 mb-4 mb-lg-0 center">
-                                                    <h3>This verifies that</h3>
-                                                    <h2>${student.name} has completed the courses -<br>${student.Cname}</h2><br>
-                                                    <a href="https://cryptch.tech/verify/${student.enr}.pdf" target="_blank">Click here to download</a><br>
-                                                    <br>
-                                                </div>
-                                                <div class="col-lg-6">
-                                                    <object class="cer" data="${student.enr}.pdf" width="600" height="520" style="border:0;" allowfullscreen="" loading="lazy"></object>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </section>
-                                `;
-                            } else {
-                                alert('Student not found');
-                            }
-                        } else {
-                            console.error('Element with ID "studentDetails" not found.');
-                        }
-                    })
-                    .catch(error => {
-                        console.error('Error:', error);
-                        alert('An error occurred while fetching student data.');
-                    });
-            }
-
-            // Add the event listener after the function is defined
-            const searchButton = document.getElementById('searchButton');
-            if (searchButton) {
-                searchButton.addEventListener('click', searchStudent);
-            } else {
-                console.error('Element with ID "searchButton" not found.');
-            }
-        });
-    </script>
+    
 
 </body>
 
