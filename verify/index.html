@@ -129,10 +129,10 @@
     <section class="section bg-gray" style="
     padding-top: 0px;
     padding-bottom: 0px;">
-         <div id="studentDetails"></div>
+         <div id="studentDetails"><br></div>
 
     <script>
-        document.addEventListener('DOMContentLoaded', function () {
+       
             function searchStudent() {
                 const enrollmentNumber = document.getElementById('enrollmentNumber').value;
 
@@ -172,7 +172,7 @@
                         console.error('Error:', error);
                         alert('An error occurred while fetching student data.');
                     });
-            }
+            
 
             // Add the event listener after the function is defined
             const searchButton = document.getElementById('searchButton');
@@ -181,7 +181,7 @@
             } else {
                 console.error('Element with ID "searchButton" not found.');
             }
-        });
+        }
     </script>
 
     </section>
