@@ -302,7 +302,7 @@
     {
         "enr": "CP-ENR-191",
         "name": "Muskan Yadav",
-        "Cname": "Cryptch Certified AWS Cloud Solutions Architect"
+        "Cname": "Cryptch Certified AWS Cloud Solutions Architect, Networking Essentials, Cisco Routing and Switching Devices"
     },
     {
         "enr": "CP-ENR-192",
@@ -652,12 +652,12 @@
     {
         "enr": "CP-ENR-336",
         "name": "Ratan Yadav",
-        "Cname": "Cryptch Certified AWS Cloud Solutions Architect"
+        "Cname": "Cryptch Certified AWS Cloud Solutions Architect, Cryptch Certified AWS Cloud Solutions Architect"
     },
     {
         "enr": "CP-ENR-337",
         "name": "Adarsh Tiwari",
-        "Cname": "Cryptch Certified AWS Cloud Solutions Architect"
+        "Cname": "Cryptch Certified AWS Cloud Solutions Architect, Cryptch Certified AWS Cloud Solutions Architect"
     },
     {
         "enr": "CP-ENR-340",
@@ -679,6 +679,92 @@
         "name": "Divyanshi Chouksey",
         "Cname": "Cryptch Certified AWS Cloud Solutions Architect"
     },
+    {
+        "enr": "CP-ENR-324",
+        "name": "Poorv Satwakar",
+        "Cname": "Introduction to programming using Java & Basics of Information Technology"
+    },
+    {
+        "enr": "CP-ENR-326",
+        "name": "Rajveer Soni",
+        "Cname": "Networking Essentials, Cisco Routing and Switching Devices"
+    },
+    {
+        "enr": "CP-ENR-345",
+        "name": "Vaibhav Ratnakar",
+        "Cname": "Networking Essentials, Cisco Routing and Switching Devices"
+    },
+    {
+        "enr": "CP-ENR-346",
+        "name": "Prasita Patel",
+        "Cname": "Networking Essentials, Cisco Routing and Switching Devices"
+    },
+    {
+        "enr": "CP-ENR-350",
+        "name": "Saurabh Sharma",
+        "Cname": "Cisco Routing and Switching Devices, Cryptch Certified AWS Cloud Solutions Architect"
+    },
+    {
+        "enr": "CP-ENR-335",
+        "name": "Shantanu Jain",
+        "Cname": "Introduction to programming using C & C++"
+    },
+    {
+        "enr": "CP-ENR-358",
+        "name": "Yashika Agrawal",
+        "Cname": "Introduction to programming using C "
+    },
+    {
+        "enr": "CP-ENR-359",
+        "name": "Apoorv Pandey",
+        "Cname": "Introduction to programming using C, C++"
+    },
+    {
+        "enr": "CP-ENR-360",
+        "name": "Aditya Kumar Garg",
+        "Cname": "Introduction to programming usingC, C++"
+    },
+    {
+        "enr": "CP-ENR-362",
+        "name": "Muskan Agrahari",
+        "Cname": "Introduction to programming using C, C++"
+    },
+    {
+        "enr": "CP-ENR-363",
+        "name": "Rashi Agrawal",
+        "Cname": "Introduction to programming using C, C++"
+    },
+    {
+        "enr": "CP-ENR-364",
+        "name": "Manas Gupta",
+        "Cname": "Introduction to programming using C, C++, Python"
+    },
+    {
+        "enr": "CP-ENR-329",
+        "name": "Priyanshu Nagiya",
+        "Cname": "Introduction to programming using C, C++, Python"
+    },
+    {
+        "enr": "CP-ENR-339",
+        "name": "Pratham Saraf",
+        "Cname": "Introduction to programming using C, C++, Python"
+    },
+    {
+        "enr": "CP-ENR-365",
+        "name": "Pratishtha Dubey",
+        "Cname": "Introduction to programming using C, C++, Java"
+    },
+    {
+        "enr": "CP-ENR-308",
+        "name": "Abhi Patel",
+        "Cname": "Introduction to programming using C"
+    },
+    {
+        "enr": "CP-ENR-309",
+        "name": "Om singh",
+        "Cname": "Introduction to programming using C"
+    },
+    {},
     {
         "enr": "CP-INT-122",
         "name": "Miss Sanskriti Shrivastava",
