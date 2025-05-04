@@ -892,5 +892,45 @@
         "enr": "CP-INT-123",
         "name": "DATA FORENSICS",
         "Cname": "Internship - DATA FORENSICS"
+    },
+{
+        "enr": "CP-ENR-433",
+        "name": "Prateek Singh",
+        "Cname": "Cryptch Certified Microsoft Windows Server Administrator"
+    },
+{
+        "enr": "CP-ENR-479",
+        "name": "Shivanshu Shukla",
+        "Cname": "Introduction to programming using C, C++ & Python"
+    },
+{
+        "enr": "CP-ENR-471",
+        "name": "Archie Modi",
+        "Cname": "Introduction to programming using C, C++ & Python "
+    },
+{
+        "enr": "CP-ENR-452",
+        "name": "Shivam Shukla",
+        "Cname": "Introduction to programming using C, C++ & Python "
+    },
+{
+        "enr": "CP-ENR-456",
+        "name": "Palak Patel",
+        "Cname": "Introduction to programming using C, C++ & Python "
+    },
+{
+        "enr": "CP-ENR-453",
+        "name": "Samruddhi Donde",
+        "Cname": "Introduction to programming using C, C++ & Python "
+    },
+{
+        "enr": "CP-ENR-451",
+        "name": "Shivam Dixit",
+        "Cname": "Introduction to programming using C, C++ & Python "
+    },
+{
+        "enr": "CP-ENR-454",
+        "name": "Gyanesh Harshal Nemade",
+        "Cname": "Introduction to programming using C, C++ & Python "
     }
 ]
