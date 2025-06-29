@@ -932,5 +932,43 @@
         "enr": "CP-ENR-454",
         "name": "Gyanesh Harshal Nemade",
         "Cname": "Introduction to programming using C, C++ & Python "
+    },
+    {
+        "enr": "CP-ENR-468",
+        "name": "Kanha Patel",
+        "Cname": "Introduction to programming using C, C++ "
+    },
+{
+        "enr": "CP-ENR-482",
+        "name": "Samir Bidwaikar",
+        "Cname": "Cryptch Certified AWS Cloud Solutions Architect & Microsoft Windows Server Administrator
+  "
+    },
+{
+        "enr": "CP-ENR-483",
+        "name": "Prashant Kumar Tripathi",
+        "Cname": "Cryptch Certified AWS Cloud Solutions Architect & Microsoft Windows Server Administrator
+  "
+    },
+{
+        "enr": "CP-ENR-484",
+        "name": "Brijesh Kumar Suman",
+        "Cname": "Cryptch Certified AWS Cloud Solutions Architect & Microsoft Windows Server Administrator
+  "
+    },
+{
+        "enr": "CP-ENR-500",
+        "name": "Bhoomika Patel",
+        "Cname": "Advance Python Programming"
+    },
+{
+        "enr": "CP-ENR-458",
+        "name": "Sujal Tamrakar",
+        "Cname": "Introduction to programming using C, C++ & Java "
+    },
+{
+        "enr": "CP-ENR-429",
+        "name": "Shashank Shukla",
+        "Cname": "Introduction to programming using C, C++, Python & Java "
     }
 ]
