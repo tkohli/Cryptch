@@ -970,5 +970,182 @@
         "enr": "CP-ENR-429",
         "name": "Shashank Shukla",
         "Cname": "Introduction to programming using C, C++, Python & Java "
+    },
+    {
+        "enr": "CP-ENR-506",
+        "name": "Ayus Dubey",
+        "Cname": "Cryptch Certified Computer Networking & Cisco Routing & Switching Devices"
+    },
+{
+        "enr": "CP-ENR-507",
+        "name": "Ayush Awasthi",
+        "Cname": "Cryptch Certified Computer Networking & Cisco Routing & Switching Devices"
+    },
+{
+        "enr": "CP-ENR-507",
+        "name": "Khushi Upadhyay",
+        "Cname": "Cryptch Certified Computer Networking & Cisco Routing & Switching Devices"
+    },
+{
+        "enr": "CP-ENR-513",
+        "name": "Sahil Balmik",
+        "Cname": "Introduction to programming using C, C++ & Python"
+    },
+{
+        "enr": "CP-ENR-537",
+        "name": "Mahi Agrawal",
+        "Cname": "Introduction to programming Python"
+    },
+{
+        "enr": "CP-ENR-556",
+        "name": "Parth Tiwari",
+        "Cname": "Introduction to programming using C, C++ & Python"
+    },
+{
+        "enr": "CP-ENR-570",
+        "name": "Khushbu Verma",
+        "Cname": "Introduction to programming using C, C++, Python & Java"
+    },
+{
+        "enr": "CP-ENR-589",
+        "name": "Sushanto Chatterjee",
+        "Cname": "Cryptch Certified Hardware & Operating Systems"
+    },
+{
+        "enr": "CP-ENR-397",
+        "name": "Devansh Sondhiya",
+        "Cname": "Cryptch Certified Computer Networking & Cisco Routing & Switching Devices"
+    },
+{
+        "enr": "CP-ENR-398",
+        "name": "Shivam Gupta",
+        "Cname": "Cryptch Certified Computer Networking & Cisco Routing & Switching Devices"
+    },
+{
+        "enr": "CP-ENR-397",
+        "name": " Devansh Sondhiya ",
+        "Cname": "Cryptch Certified AWS Cloud Solutions Architect"
+    },
+{
+        "enr": "CP-ENR-398",
+        "name": " Shivam Gupta",
+        "Cname": "Cryptch Certified AWS Cloud Solutions Architect"
+    },
+{
+        "enr": "CP-ENR-462",
+        "name": "Mukul Kewat",
+        "Cname": "Cryptch Certified Hardware & Network Engineer+"
+    },
+{
+        "enr": "CP-ENR-463",
+        "name": "Prakash Dhurvey",
+        "Cname": "Cryptch Certified Hardware & Network Engineer+"
+    },
+{
+        "enr": "CP-ENR-597",
+        "name": "Parv Vishwakarma",
+        "Cname": "Introduction to programming using C, C++ & Python"
+    },
+{
+        "enr": "CP-ENR-598",
+        "name": "Ayushman Asati",
+        "Cname": "Introduction to programming using C, C++ & Python"
+    },
+{
+        "enr": "CP-ENR-599",
+        "name": "Mohit Puri",
+        "Cname": "Introduction to programming using C, C++ & Python"
+    },
+{
+        "enr": "CP-ENR-578",
+        "name": "Himanshu Khare",
+        "Cname": "Introduction to programming using C, C++, Python & Java "
+    },
+{
+        "enr": "CP-ENR-574",
+        "name": "Tanishq Singh Rajput",
+        "Cname": "Introduction to programming using C, C++, Python & Java"
+    },
+{
+        "enr": "CP-ENR-572",
+        "name": " Vidansh Kumar Tiwari ",
+        "Cname": "Introduction to programming using C, C++, Python & Java"
+    },
+{
+        "enr": "CP-ENR-600",
+        "name": "Ankush Chaturvedi",
+        "Cname": "Introduction to programming using C, C++ & Python"
+    },
+
+
+{
+        "enr": "CP-ENR-604",
+        "name": "Satendra Singh Lodhi",
+        "Cname": "Cryptch Certified MS Office (MS Word, MS Excel, MS PowerPoint)"
+    },
+{
+        "enr": "CP-ENR-611",
+        "name": "Shreya Patel",
+        "Cname": "Cryptch Certified MS Office (MS Word, MS Excel, MS PowerPoint)"
+    },
+{
+        "enr": "CP-ENR-608",
+        "name": "Tanishka Chourasiya",
+        "Cname": "Cryptch Certified MS Office (MS Word, MS Excel, MS PowerPoint)"
+    },
+{
+        "enr": "CP-ENR-621",
+        "name": "Kanikaa Anandani",
+        "Cname": "Introduction to programming using C & C++"
+    },
+{
+        "enr": "CP-ENR-622",
+        "name": "Akshat Mishra",
+        "Cname": "Cryptch Certified MS Office (MS Word, MS Excel, MS PowerPoint)"
+    },
+{
+        "enr": "CP-ENR-576",
+        "name": "Nitin Singh Kaurav",
+        "Cname": "Cryptch Certified Computer Networking & Cisco Routing & Switching Devices"
+    },
+{
+        "enr": "CP-ENR-577",
+        "name": "Alok Tiwari",
+        "Cname": "Cryptch Certified Computer Networking & Cisco Routing & Switching Devices"
+    },
+{
+        "enr": "CP-ENR-582",
+        "name": "Ashok Kumar Yadav",
+        "Cname": "Cryptch Certified Computer Networking & Cisco Routing & Switching Devices"
+    },
+{
+        "enr": "CP-ENR-591",
+        "name": "Deepak Mahobiya",
+        "Cname": "Cryptch Certified Computer Networking & Cisco Routing & Switching Devices"
+    },
+{
+        "enr": "CP-ENR-609",
+        "name": "Avigh Dixit",
+        "Cname": "Cryptch Certified MS Office (MS Word, MS Excel, MS PowerPoint)"
+    },
+{
+        "enr": "CP-ENR-627",
+        "name": "Mansi Singh Thakur",
+        "Cname": "Cryptch Certified MS Excel Course"
+    },
+{
+        "enr": "CP-ENR-628",
+        "name": "Pratham Pathak",
+        "Cname": "Cryptch Certified MS Excel Course"
+    },
+    {
+        "enr": "CP-ENR-463",
+        "name": "Prakash Dhurvey",
+        "Cname": "Cryptch Certified Hardware & Network Engineer+"
+    },
+    {
+        "enr": "CP-ENR-462",
+        "name": "Mukul Kewat",
+        "Cname": "Cryptch Certified Hardware & Network Engineer+"
     }
 ]
